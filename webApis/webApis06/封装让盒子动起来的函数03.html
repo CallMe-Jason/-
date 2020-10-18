@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/animate.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            position: absolute;
+            top: 150px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button id="btn200">200</button>
+    <button id="btn400">400</button>
+    <button id="btn800">800</button>
+    <button id="btn1200">1200</button>
+    <script>
+        var div = document.querySelector('div')
+        var btn200 = document.querySelector('#btn200')
+        var btn400 = document.querySelector('#btn400')
+        var btn800 = document.querySelector('#btn800')
+        btn200.addEventListener('click',function(){
+            animate(div,200)
+        })
+        btn400.addEventListener('click',function(){
+            animate(div,400)
+        })
+        btn800.addEventListener('click',function(){
+            animate(div,800)
+        })
+        btn1200.addEventListener('click',function(){
+            animate(div,1200)
+        })
+    </script>
+</body>
+</html>

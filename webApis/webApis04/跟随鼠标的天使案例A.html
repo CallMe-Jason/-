@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 80px;
+            height: 24px;
+            position: absolute;
+            border: 1px solid pink;
+            color: pink;
+            cursor: pointer;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">聂婷是队霸</div>
+    <script>
+        var div = document.querySelector('div')
+        document.addEventListener('mousemove',function(e) {
+            var x = e.pageX
+            var y = e.pageY
+            div.style.left = x - 40 + 'px'
+            div.style.top = y - 12 + 'px'
+        })
+    </script>
+</body>
+</html>

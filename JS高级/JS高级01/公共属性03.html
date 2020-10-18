@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(uname,age,sex){
+                this.uname = uname
+                this.age = age
+                this.sex = sex
+            }
+           
+        }
+        class Teacher extends Person{
+            constructor(uname,age,sex){
+                super(uname,age,sex)
+            }
+            teach(){
+                console.log(`${this.uname}教学`);
+            }
+        }
+        // var ziYang = new Person('紫阳',18,'男')
+        // console.log(ziYang);
+        // ziYang.teach()
+        var teacherZiYang = new Teacher('紫阳',18,'男')
+        // console.log(teacherZiYang);
+        teacherZiYang.teach()
+
+    // </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+        .son {
+            /* display: none; */
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0px;
+            height: 500px;
+            background-color: pink;
+        }
+        h2 {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        查看机密
+        <button>显示</button>
+        <div class="son">
+            <button>隐藏</button>
+               <h2> 聂婷是队霸</h2>
+        </div>
+    </div>
+    <script>
+        $('.father button').click(function(){
+            $('.father .son').stop().animate({
+                width:500
+            },1000)
+        })
+        $('.father .son button').click(function(){
+            $('.father .son').stop().animate({
+                width:0
+            },1000)
+        })
+    </script>
+</body>
+</html>

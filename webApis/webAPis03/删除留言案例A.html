@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            margin: 5px;
+            width: 300px;
+            height: 30px;
+            background-color: pink;
+        }
+        li a {
+            float: right;   
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>发布</button>
+    <hr>
+    <ul>
+        
+    </ul>
+    <script>
+        //获取元素
+        var btn = document.querySelector('button')
+        var text = document.querySelector('textarea')
+        var ul = document.querySelector('ul')
+        //注册点击事件
+        btn.onclick = function () {
+            if (text.value.trim() === '') {
+                return alert('请输入')
+            }
+            //判断是否为空
+            var liNode = document.createElement('li')
+            //创建li节点，调用外面的del()函数，当点击时指向a标签，this实参
+            liNode.innerHTML = `${text.value} <a href = "javascript:;" onclick="del(this)">删除</a>`
+            //li节点里的内容赋值
+            ul.insertBefore(liNode,ul.children[0])
+            //添加节点
+            text.value = ''
+            //清空内容
+        }
+        function del(one) {
+            //one形参
+            one.parentNode.remove()   
+            //a标签的父亲自己删除自己
+        }
+    </script>
+</body>
+</html>

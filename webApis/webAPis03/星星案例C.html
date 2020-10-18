@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       document.addEventListener('click',function(e) {
+            var e = e || window.event
+            var x = e.clientX
+            var y =e.clientY
+            var imgNode = document.createElement('img')
+            imgNode.src = './images/1.png'
+            var width = getRandom(100,20)
+            imgNode.width = width
+            imgNode.style.left = (x - width / 2) + 'px'
+            imgNode.style.top = (y - width / 2) + 'px'
+            document.body.appendChild(imgNode)
+       })
+       function getRandom(max,min) {
+           return Math.floor(Math.random() * (max - min + 1) + min)
+       }
+    </script>
+</body>
+</html>

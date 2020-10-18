@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            border: 1px solid #000;
+        }
+        span {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>1234</div>
+    <hr>
+    <button id="append">append</button>
+    <button id="prepend">prepend</button>
+    <button id="after">after</button>
+    <button id="before">before</button>
+    <script>
+        $('#append').click(function(){
+            var $span = $('<span>1234</span>')
+            $('div').append($span)
+        })
+        $('#prepend').click(function(){
+            var $span = $('<span>1234</span>')
+            $('div').prepend($span)
+        })
+        $('#after').click(function(){
+            var $span = $('<span>1234</span>')
+            $('div').after($span)
+        })
+        $('#before').click(function(){
+            var $span = $('<span>1234</span>')
+            $('div').before($span)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 30px;
+            height: 30px;
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <script>
+        var btns = document.querySelectorAll('button')
+        var body = document.body
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                for (var j = 0; j < btns.length; j++) {
+                    btns[j].style.backgroundColor = ''
+                }
+                this.style.backgroundColor = 'pink'
+            }
+        }
+    </script>
+</body>
+</html>

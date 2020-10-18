@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ccc;
+            /* overflow: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <button>按钮</button>
+    <hr>
+    <ul>
+        <li>美国</li>
+        <li>又一例</li>
+        <li>时隔三日</li>
+        <li>欧洲反扑</li>
+    </ul>
+    <script>
+        var btn = document.querySelector('button')
+        var ul = document.querySelector('ul')
+        btn.onclick = function () {
+            var liFirst = ul.children[0]
+            ul.appendChild(liFirst)
+        }
+    </script>
+</body>
+</html>

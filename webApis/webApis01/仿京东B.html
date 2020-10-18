@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            position: relative;
+            margin: 200px auto;
+            width: 300px;
+            height: 30px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        input {
+            text-indent: 1em;
+            height: 100%;
+            width: 270px;
+            outline: none;
+            border: none;
+        }
+
+        label {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 20px;
+            height: 30px;
+        }
+
+        label img {
+            width: 100%;
+        }
+
+        label img {
+            cursor: pointer
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="password" value="快速点击眼睛以获得恐怖谷效应">
+        <label for=""><img src="images/close.png" alt=""></label>
+    </div>
+    <script>
+        var input = document.querySelector('input')
+        var label = document.querySelector('label')
+        var img = document.querySelector('img')
+        var flag = 0
+        label.onclick = function () {
+            if (flag === 0) {
+                input.type = "text"
+                img.src = "images/open.png"
+                flag = 1
+            } else {
+                input.type = "password"
+                img.src = "images/close.png"
+                flag = 0
+            }
+        }
+    </script>
+</body>
+
+</html>

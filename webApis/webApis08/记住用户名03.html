@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+<body>
+    <input type="text" name="" id="username">
+    <input type="checkbox" name="" id="remember">
+    记住用户名
+    <script>
+        var username = document.querySelector('#username')
+        var remember = document.querySelector('#remember')
+        //判断本地存储中是否有数据，有的话就取出来显示在输入框中 并打上勾
+        if (window.localStorage.getItem('username')) {
+            username.value = window.localStorage.getItem('username')
+            remember.checked = true
+        }
+        //如果需要记住用户名就存储到本地，不想记住就删除
+        remember.addEventListener('change',function() {
+            if (this.checked) {
+                window.localStorage.setItem('username',username.value)
+            }else {
+                window.localStorage.removeItem('username')
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>聂婷</span>是队霸
+    </div>
+    <hr>
+    <button>保护聂婷</button>
+    <script>
+        var span = document.querySelector('span')
+        var btn = document.querySelector('button')
+        var clearTime = setTimeout(function(){
+            span.style.display = 'none'
+        },2000)
+        btn.onclick = function() {
+            clearTimeout(clearTime)
+        }
+    </script>
+</body>
+</html>

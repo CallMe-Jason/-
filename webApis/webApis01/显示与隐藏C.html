@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <button>显示与隐藏</button>
+    <hr>
+    <div id="box"></div>
+    <script>
+        var btn = document.querySelector('button')
+        var box = document.getElementById('box')
+        var flag = true
+        btn.onclick = function () {
+            if (flag) {
+                box.style.display = 'none'
+                flag = false
+            }else {
+                box.style.display = 'block'
+                flag = true
+            }
+        }
+        box.onmouseover = function () {
+            box.className = 'box'
+        }
+        box.onmouseout = function () {
+            box.className = ''
+        }
+    </script>
+</body>
+</html>

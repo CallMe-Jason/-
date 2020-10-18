@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            margin: 0 auto;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>聂婷是队霸</div>
+    <script>
+        var div = document.querySelector('div')
+        setInterval(function(){
+            div.style.display = 'none'
+        },100) 
+        setInterval(function(){
+            div.style.display = 'block'
+            div.style.backgroundColor = 'pink'
+        },200)
+        setInterval(function(){
+            div.style.display = 'none'
+        },300) 
+        setInterval(function(){
+            div.style.display = 'block'
+            div.style.backgroundColor = 'red'
+        },400)
+        setInterval(function(){
+            div.style.display = 'none'
+        },500) 
+        setInterval(function(){
+            div.style.display = 'block'
+            div.style.backgroundColor = 'blue'
+        },600)
+    </script>
+</body>
+
+</html>

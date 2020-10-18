@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <script>
+        $('button').click(function(){
+            $(this).css({
+                backgroundColor:'red'
+            })
+            $(this).siblings().css({
+                backgroundColor:''
+            })
+        })
+    </script>
+</body>
+</html>

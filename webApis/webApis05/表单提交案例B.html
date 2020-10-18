@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="uname" id="">
+        <input type="password" name="pwd" id="">
+        <input type="text" name="age" id="">
+        <button>提交</button>
+    </form>
+    <script>
+        var search = location.search
+        //获取元素
+        var obj = {}
+        //创建一个空对象
+        var str = search.substr(1)
+        //截取字符串赋值给str
+        var arr = str.split('&')
+        //把字符串以&作为分隔符创建数组
+        for (var i = 0; i < arr.length; i++) {
+            //遍历数组
+            var Arr = arr[i].split('=')
+            //以=号分隔数组里的每个元素，并赋值给新的数组
+            obj[Arr[0]] = Arr[1]
+            //以索引号0为属性名，1为属性值添加给对象
+        }
+        console.log(obj);
+    </script>
+</body>
+
+</html>
+<!-- 需求：
+把提交的表单里的值保存到对象中去
+思路：
+    1.获取元素，创建一个空的对象
+    2.用location.search获取表单中的内容
+    3.用substr截取问好以后的内容
+    4.用split分隔，并赋值给数组
+    5.遍历数组，并再次使用split把数组里面的元素分隔为新的数组
+    6.以新的数组索引号为0作为对象的属性名，1为对象的属性值 添加给对象 -->

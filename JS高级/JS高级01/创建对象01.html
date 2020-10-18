@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Star{//创建类
+            constructor(uname,age){//构造函数，形参
+                this.uname = uname//this指向实例化对象
+                this.age = age
+            }
+            sing(){
+                console.log(this.uname + '是队霸');
+            }
+        }
+        var ldh = new Star('刘德华',18)//实例化对象，实参
+        // console.log(ldh);//输出
+        // ldh.sing()
+        var nt = new Star('聂婷',18)
+
+        nt.sing()
+    </script>
+</body>
+</html>

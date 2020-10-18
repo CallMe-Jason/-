@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .box {
+            position: relative;
+            margin: 0 auto;
+            width: 741px;
+            height: 475px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .box1 {
+            width: 721px;
+            height: 455px;
+        }
+        ul {
+            width: 450%;
+        }
+        ul li {
+            float: left;
+        }
+        ol {
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+        }
+        ol li {
+            margin: 10px 10px;
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            transform:rotateZ(45deg);
+            cursor: pointer;
+        }
+        .bg {
+            border:3px solid white
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <ul>
+                <li>
+                    <img src="images/focus.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/focus1.jpg" alt="">
+                </li><li>
+                    <img src="images/focus2.jpg" alt="">
+                </li><li>
+                    <img src="images/focus3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="box2">
+            <ol>
+                <!-- <li class="bg"></li>
+                <li></li>
+                <li></li>
+                <li></li> -->
+            </ol>
+        </div>
+    </div>
+    <script>
+        var ul = document.querySelector('ul')
+        var ol = document.querySelector('ol')
+
+        for (var i = 0; i < ul.children.length; i ++) {
+            var olLi = document.createElement('li')
+            ol.appendChild(olLi)
+            ol.children[0].className = 'bg'
+            var olLis = ol.children
+            // console.log(olLis[0]);
+            olLis[i].addEventListener('click',function(){
+                for (var j = 0; j < olLis.length; j++) {
+                    olLis[j].className = ''
+                }
+                this.className = 'bg'
+            })
+        }
+    </script>
+</body>
+</html>
