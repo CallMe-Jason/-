@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var newArr
+        //用于创建一个新数组，主要用于筛选数组
+        var arr = [1, 23, 4]
+        var newArr = arr.filter(function (value, index, array) {
+            return value >= 20//选择大于20的元素进入新的数组
+        })
+        console.log(newArr);
+// #返回的是一个新数组
+    </script>
+</body>
+
+</html>
