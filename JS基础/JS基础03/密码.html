@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user = prompt('用户名')
+        var pwd = prompt('密码') 
+        var flag = true
+        while(flag) {
+            if (user === 'admin' && pwd === '123456')
+            alert('登录成功')
+            else {
+                user = prompt('用户名')
+                pwd = prompt('密码') 
+            }
+        }
+    </script>
+</body>
+</html>

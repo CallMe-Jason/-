@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="***.php" method="GET">
+       <label for="user">用户名：</label> <input type="text" name="username" value="请输入用户名" maxlength="6" id="user"><br />
+       <label>密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="psw"></label><br />
+       性&nbsp;&nbsp;&nbsp;&nbsp;别：
+       <input type="radio" name="sex" id="nan" checked="checked" value="1"><label for="nan">男</label>
+       <input type="radio" name="sex" id="nv" value="2"><label for="nv">女</label><br />
+       爱&nbsp;&nbsp;&nbsp;&nbsp;好：**<input type="checkbox" name="hobby" id="" value="3">**<input type="checkbox" name="hobby" id="" value="4">**<input type="checkbox" checked="checked" name="hobby" id="" value="5"><br />
+       籍贯：<select name="jiguan" id="">
+        <option value="1" selected>内蒙</option>
+        <option value="2">湖北</option>
+        <option value="3">河南</option>
+        </select>
+       <br />
+       <h2>个人介绍：</h2><br />
+        <textarea cols="50" rows="6">有啥想说的</textarea>
+       <br />
+       <input type="file">
+       <br />
+       <input type="submit" value="提交数据">
+       <input type="reset" value="重新填写">
+       <input type="button" value="获取验证码">
+    </form><br />
+   
+</body>
+</html>

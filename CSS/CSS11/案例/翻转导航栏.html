@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            padding-left: 10px;
+            position: relative;
+            list-style: none;
+            width: 200px;
+            height: 50px;
+            perspective: 1000px;
+        }
+        .box1 {
+            line-height: 50px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: r 1s linear infinite;
+        }
+        .front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            z-index: 1;
+            transform: translateZ(25px);
+        }
+        .bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: purple;
+            transform: translateY(25px) rotateX(-90deg);
+        }
+        .hou {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            transform: translateZ(-25px);
+        }
+        .hou1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            transform: translateY(-25px) rotateX(-90deg);
+        }
+       @keyframes r {
+           0% {
+
+           }
+           100% {
+            transform: rotateX(360deg);
+           }
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box1">
+                <div class="front">hhhh</div>
+                <div class="bottom">dddd</div>
+                <div class="hou">456</div>
+                <div class="hou1">789</div>
+            </div>
+        </li>
+       
+</body>
+</html>

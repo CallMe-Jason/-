@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xiong {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+        .red {
+            margin-top: 50px;
+            margin-left: 50px;
+            background-color: red;
+            z-index: 2;
+        }
+        .blue {
+            margin-top: 100px;
+            margin-left: 100px;
+            background-color: blue;
+            z-index: 1;
+        }
+        .yellow {
+            margin-top: 150px;
+            margin-left: 150px;
+            background-color: yellow;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="xiong red"></div>
+    <div class="xiong blue"></div>
+    <div class="xiong yellow"></div>
+</body>
+</html>

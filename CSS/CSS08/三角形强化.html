@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            margin: 0 auto;
+            width: 500px;
+            height: 50px;
+            border: 1px solid red;
+        }
+        .case {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 250px;
+            height: 50px;
+            background-color: yellow;
+        }
+        .case p {
+            line-height: 50px;
+        }
+        .box i {
+            line-height: 50px;
+            padding-left: 125px;
+        }
+        .case .sanjiao {
+            position: absolute;
+            right: 0;
+            width: 0px;
+            height: 0px;
+            border-left: 25px solid transparent;
+            border-top: 50px solid white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="case">
+            <div class="sanjiao"></div>
+            <p>2000</p>
+        </div>
+        <i>1000</i>
+    </div>
+</body>
+</html>

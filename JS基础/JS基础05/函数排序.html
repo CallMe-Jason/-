@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [10,3,5,23,66,18]
+        var arr1 = [10,3,5,23,66,18,1,4,0,1,54,12,12]
+        function app(one)    {
+            for (var i = 0; i < one.length - 1; i++) {
+                for (var j = 0; j < one.length - i - 1; j++) {
+                    if (one[j] > one[j + 1]) {
+                        var temp = one[j]
+                            one[j] = one[j + 1]
+                            one[j + 1] = temp
+                    }
+                }
+            }
+        }
+        app(arr1)
+        app(arr)
+        document.write(arr + '<br />')
+        document.write(arr1)
+    </script>
+</body>
+</html>

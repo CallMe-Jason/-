@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="CN-zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function app (one) {
+            var max = one[0]
+            for (var i = 1; i < one.length; i++) {
+                if (max < one[i]) {
+                    max = one[i]
+                }
+            }
+            return max;
+        }
+        var re = app([1,24,51,24,4,123,64])
+        document.write(re)
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var uname = '张三丰'
+        var sex = '男'
+        var age = '18'
+        var hobby = '打太极'
+        var res = `<h2 style="color:purple">打印${uname}的个人资料</h2>`
+            res += `<ul style="list-style: none">`
+            res += `<li style="color:red">姓名:<a href="前加加后加加.html" style="text-decoration: none;color:yellow">${uname}</a></li>`
+            res += `<li style="color:blue">性别:${sex}</li>`
+            res += `<li style="color:green">年龄:${age}</li>`
+            res += `<li style="color:pink">爱好:${hobby}</li>`
+            res += `</ul>`
+        document.write(res)
+        console.log(res);
+    </script>
+</body>
+</html>

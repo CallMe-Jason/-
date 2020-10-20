@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [2,6,1,77,25,52,7,123,,1,31,4,3,4,124,32,41,3,12,43,24,13,412]
+        var max = arr[0]
+        var min = arr[0]
+        for (var i = 1; i < arr.length; i++) {
+            if (min > arr[i]) {
+                min = arr[i]
+            }
+            if (max < arr[i] ) {
+                max = arr[i]
+            }
+        }
+        document.write(`该数组里的最大值是${max},最小值为${min}`)
+    </script>
+</body>
+</html>

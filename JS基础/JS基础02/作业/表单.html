@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table {
+           border-collapse: collapse;
+           text-align: center;
+       }
+       table td {
+           border:1px solid #ccc;  
+           width: 100px;
+           height: 25px;      
+       }
+    </style>
+</head>
+<body>
+    <!-- <form>
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>身高</td>
+                <td>体重</td>
+            </tr>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>身高</td>
+                <td>体重</td>
+            </tr>
+        </table> -->
+    </form>
+    <script>
+        var uname = prompt('姓名')
+        var age = prompt('年龄')
+        var height = prompt('身高')
+        var  weight = prompt('体重')
+        var res = `<form>` + `<table>` + `<tr>`
+            res += `<td>姓名</td>`
+            res += `<td>年龄</td>`
+            res += `<td>身高</td>`
+            res += `<td>体重</td>`
+            res += `</tr>`
+            res += `<tr>`
+            res += `<td style=color:red>${uname}</td>`
+            res += `<td style=color:red>${age}</td>`
+            res += `<td style=color:red>${height}</td>`
+            res += `<td style=color:red>${weight}</td>`
+            res += `</tr>` + `<table>` + `</form>`
+        console.log(res);
+        document.write(res)
+    </script>
+</body>
+</html>

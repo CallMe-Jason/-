@@ -1,0 +1,253 @@
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  font-family:  Arial,Helvetica;
+  background-color: #f7f7f7;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+li {
+  list-style: none;
+}
+.search_content {
+  text-align: center;
+  display: flex;
+  position: fixed;
+  width: 15rem;
+  height: 1.76rem;
+  top: 0;
+}
+.search_content .classift {
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  width: 0.88rem;
+  height: 1.4rem;
+  background: url(../images/classify.png) no-repeat;
+  background-size: 100%;
+}
+.search_content .search {
+  flex: 1;
+}
+.search_content .search input {
+  width: 100%;
+  height: 1.32rem;
+  border-radius: 0.66rem;
+  background-color: #fff2cc;
+  margin-top: 0.24rem;
+  font-size: 0.5rem;
+  padding-left: 1.1rem;
+  color: #757575;
+  border: 0;
+  outline: none;
+}
+.search_content .login {
+  margin: 0.2rem;
+  width: 1.5rem;
+  height: 1.4rem;
+  font-size: 0.48rem;
+  line-height: 1.4rem;
+  color: #fff;
+}
+.banner {
+  width: 15rem;
+  height: 7.36rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.ad {
+  display: flex;
+}
+.ad a img {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 2.8rem;
+}
+nav a img {
+  width: 1.64rem;
+  height: 1.64rem;
+}
+nav a span {
+  padding-top: 0.2rem;
+  font-size: 0.5rem;
+  color: #333;
+}
+.hb {
+  margin-bottom: 0.48rem;
+  display: flex;
+  width: 15rem;
+  height: 4.68rem;
+  background-color: pink;
+}
+.hb [class^="box"] {
+  flex: 1;
+}
+.hb .box1 img {
+  width: 7.47rem;
+  height: 4.68rem;
+}
+.hb .box2 {
+  display: flex;
+  justify-content: space-between;
+}
+.hb .box2 em img {
+  width: 3.725rem;
+  height: 4.68rem;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14rem;
+  margin: 0 auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px ;
+}
+.main a {
+  width: 6.98rem;
+}
+.main a:nth-child(2n-1) {
+  border-right: 1px solid #ccc;
+}
+.main a:nth-child(n+3) {
+  border-top: 1px solid #ccc;
+}
+.main a img {
+  vertical-align: middle;
+  width: 6.98rem;
+  height: 5.16rem;
+}
+.main ul {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 3.44rem;
+}
+.main ul li {
+  border-top: 1px solid #ccc;
+  flex: 1;
+  background-color: yellow;
+}
+.main ul li img {
+  width: 2.8rem;
+  height: 3.44rem;
+}
+.opa1 img {
+  width: 100%;
+  height: 4.2rem;
+}
+.block {
+  height: 2rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 15rem;
+}
+footer ul {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  height: 2rem;
+}
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.44rem;
+  flex: 20%;
+  height: 2rem;
+}
+footer ul li a {
+  color: #000;
+}
+footer ul li span {
+  width: 0.96rem;
+  height: 0.96rem;
+  background: url(../images/sprite.png) no-repeat -1.6rem -8.9rem;
+  background-size: 3.08rem;
+}
+footer ul img {
+  width: 0.96rem;
+  height: 0.96rem;
+}

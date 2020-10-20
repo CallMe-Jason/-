@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [12, 3, 1, 23, 1, 12, 31, 24, 12, 123,123,12,31,21,31,123]
+        for (var i = 0; i < arr.length; i++) {
+            var min = i
+            for (var j = i + 1; j < arr.length - 1; j++) {
+                if (arr[min] > arr[j]) {
+                    min = j
+                }
+            }
+            var temp = arr[i]
+            arr[i] = arr[min]
+            arr[min] = temp
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>

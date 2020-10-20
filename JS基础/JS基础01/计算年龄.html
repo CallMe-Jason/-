@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var age = prompt('请输入您的出生年份')
+        age = 2020 - age
+        console.log (age)
+        console.log (typeof age)
+        if (isNaN(age)) {
+            alert('请刷新输入数字')
+        }   
+        else {
+            if (age > 100 && age < 1000) {
+                document.write('神仙')
+            }
+            else if (age > 1000) {
+                document.write('鬼怪')
+            }
+            else if (age < 0) {
+                document.write('您还未出生')
+            }
+            else {
+                document.write (`您的年龄是:${age}岁`)
+            }
+        }
+    </script>
+</body>
+</html>

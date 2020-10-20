@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        li {
+            list-style: none;
+        }
+        a:hover{
+            color: #00a4ff;
+        }
+        .left-box:hover,
+        .right-box:hover {
+            background-color: rgba(0, 0, 0, .7)
+        }
+        
+        .tb-promo {
+            position: relative;
+            margin: 150px auto;
+            width: 520px;
+            height: 280px;
+            background:blueviolet url(images/tb.jpg);
+        }
+        .tb-promo img {
+            width: 100%;
+            height: 100%;
+        }
+        .left-box {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            left: 0;
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, .3);
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            line-height: 30px;
+        }
+        .right-box {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            right: 0;
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            background-color: rgba(0, 0, 0, .3);
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+        .nav {
+            width: 520px;
+            height: 14px;
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+        }
+        .nav li {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: #fff;
+            margin:3px;
+            
+        }
+        .nav ul {
+            display: inline-block;
+            font-size: 0;
+            height: 14px;
+            line-height: 14px;
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 7px;
+        }
+        .nav .act:hover {
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb-promo">
+        <!-- <img src="images/tb.jpg" alt=""> -->
+        <a href="#" class="left-box">&nbsp;&lt;</a>
+        <a href="#" class="right-box">&nbsp;&gt;</a>
+        <div class="nav">
+            <ul>
+                <li class="act"></li>
+                <li class="act"></li> 
+                <li class="act"></li>
+                <li class="act"></li>
+                <li class="act"></li>
+                <li class="act"></li>                                              
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

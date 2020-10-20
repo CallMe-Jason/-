@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = prompt('请输入数据')
+        document.write('<pre>')
+        var str = ''
+        for (var i = 1; i <= num; i++) {
+            for (var x = num; x >= i; x--) {
+                document.write('嘻嘻')
+            }
+            for (var j = 1; j <= 2 * i - 1; j++) {
+                if (j == 1 || j == 2 * i - 1) {
+                    document.write('🍬')
+                }
+                else {
+                    document.write('🌈')
+                }
+            }
+            document.write('<br />')
+        }
+        
+        for (var i = 1; i <= num; i++) {
+            for (var x = 1; x <= i; x++) {
+                document.write('哈哈')
+            }
+            for (var j = 1; j <= 2 * num + 1 - 2 * i; j++) {
+                if (j == 1 || j == 2 * num + 1 - 2 * i) {
+                    document.write('🍬')
+                }
+                else {
+                    document.write('🌈')
+                }
+            }
+            document.write('<br />')
+        }
+        
+        document.write(str + '<br />')
+        
+    </script>
+</body>
+
+</html>

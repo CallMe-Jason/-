@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+<body>
+    <h1 align="center">青春不常在，抓紧谈恋爱</h1>
+    <hr />
+<form action="***.php" method="GET">
+    <table align="center" border="1" cellspacing="0" width="600" height="800">
+        <!-- 第一行 -->
+        <tr>
+            <th>性别</th>
+            <td>
+                <input type="radio" name="sex" id="nan" checked value="1"><label for="nan"><img src="images/man.jpg">男</label>
+                <input type="radio" name="sex" id="nv" value="2"><label for="nv"><img src="images/women.jpg">女</label>
+            </td>
+
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <th>生日</th>
+            <td>
+                <select>
+                    <option value="">-请选择年份-</option>
+                    <option value="" s>2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                </select>
+                <select>
+                    <option value="">-请选择月份-</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <select>
+                    <option value="">-请选择日-</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <th><label for="diqu">所在地区</label></th>
+            <td>
+            <input type="text" value="请填写地区" id="diqu">
+            </td>
+        </tr>
+        <!-- 第四行 -->
+        <tr>
+            <th>婚姻状况</th>
+            <td>
+                <input type="radio" name="hunyin" id="yihun" value="1"><label for="yihun" >已婚</label>
+                <input type="radio" name="hunyin" checked id="weihun" value="2"><label for="weihun">未婚</label>
+                <input type="radio" name="hunyin" id="lihun"><label for="lihun" aria-valuemax="3">离婚</label>
+            </td>
+        </tr>
+        <!-- 第五行 -->
+        <tr>
+            <th>学历</th>
+            <td>
+                <input type="text" value="请填写学历">
+            </td>
+        </tr>
+        <!-- 第六行 -->
+        <tr>
+            <th>喜欢的类型</th>
+            <td>
+                <input type="checkbox" id="wumei"><label for="wumei">妩媚的</label>
+                <input type="checkbox" id="keai"><label for="keai">可爱的</label>
+                <input type="checkbox" id="xianrou"><label for="xianrou">小鲜肉</label>
+                <input type="checkbox" id="larou"><label for="larou">老腊肉</label>
+                <input type="checkbox" id="all" checked><label for="all">都喜欢</label>
+            </td>
+        </tr>
+        <!-- 第七行 -->
+        <tr>
+            <th>个人介绍</th>
+            <td>
+                <textarea>个人简介</textarea>
+            </td>
+        </tr>
+        <!-- 第八行 -->
+        <tr>
+            <th colspan="2"><input type="submit" value="免费注册"></th>
+            <!-- <td></td> -->
+        </tr>
+        <!-- 第九行 -->
+        <tr>
+            <th colspan="2"><input type="checkbox" id="tongyi" checked><label for="tongyi">我同意注册条款和会员加入标准</label> </th>
+            <!-- <td></td> -->
+        </tr>
+        <!-- 第十行 -->
+        <tr>
+            <th colspan="2"><input type="reset" id="chongzhi"><label for="chongzhi"></label></th>
+            <!-- <td></td> -->
+        </tr>
+        <!-- 第十一行 -->
+        <tr>
+            <th colspan="2"><a href="#">我是会员，立即登录</a></th>
+            <!-- <td></td> -->
+        </tr>
+        <!-- 第十二行 -->
+        <tr>
+            <th colspan="2">     
+            <ul>我承诺
+                <li>年满18岁，单身</li>
+                <li>抱着严肃的态度</li>
+                <li>真诚寻找另一半</li>
+            </ul>
+            </th>
+            <!-- <td></td> -->
+        </tr>
+    </table>
+    <hr />
+</form>
+</body>
+    <footer align="center">最终解释权归本人所有</footer>
+</html>

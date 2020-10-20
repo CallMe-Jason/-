@@ -1,0 +1,236 @@
+@import  "common";
+// 一定要写到最上面
+// html {
+//     font-size: 50px;
+// }
+// 我们此次定义的划分的份数 为 15
+// @no: 15;
+// 320
+// @media screen and (min-width: 320px) {
+//     html {
+//         font-size: 320px / @no;
+//     }
+// }
+body {
+    min-width: 320px;
+    // max-width: 750px;
+    width: 15rem;
+    margin: 0 auto;
+    font-family: Arial,Helvetica;
+    background-color: rgb(247, 247, 247);
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    // text-decoration: none;
+}
+li {
+    list-style: none;
+}
+// 顶部搜索
+@basefont:50;
+.search_content {
+    text-align: center;
+    display: flex;
+    position: fixed;
+    width: 15rem;
+    height: 88rem / @basefont;
+    top: 0;
+    // background-color: #ffdb47;
+    .classift {
+        margin: 11rem / @basefont 25rem / @basefont 7rem / @basefont 24rem / @basefont  ;
+        width: 44rem / @basefont;
+        height: 70rem / @basefont;
+        background: url(../images/classify.png) no-repeat;
+        background-size: 100%;
+    }
+    .search {
+        flex: 1;
+        // background-color: purple;   
+        input {
+            width: 100%;
+            height: 66rem / @basefont;
+            border-radius: 33rem / @basefont;
+            background-color: #fff2cc;
+            margin-top: 12rem / @basefont;
+            font-size: 25rem / @basefont;
+            padding-left: 55rem / @basefont;
+            color: #757575;
+            border: 0; 
+            outline: none;
+        }
+    }
+    .login {
+        margin: 10rem  / @basefont;
+        width: 75rem / @basefont;
+        height: 70rem / @basefont;
+        // background-color: green;
+        font-size: 24rem / @basefont;
+        line-height: 70rem / @basefont;
+        color: #fff;
+    }
+}
+// banner
+.banner {
+    width: 15rem;
+    height: 368rem / @basefont;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+// 广告部分
+.ad {
+    display: flex;
+    a {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+// 导航栏
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150rem / @basefont;
+        height: 140rem / @basefont;
+        img {
+            width: 82rem / @basefont;
+            height: 82rem / @basefont;
+        }
+        span {
+            padding-top: 10rem / @basefont;
+            font-size: 25rem / @basefont;
+            color: #333;
+        }
+    }
+}
+// 红包
+.hb {
+    margin-bottom: 24rem / @basefont;
+    display: flex;
+    width: 15rem;
+    height: 234rem / @basefont;
+    background-color: pink;
+    [class^="box"] {
+        flex: 1;
+    }
+    .box1 {
+            img {
+                width: 373.5rem / @basefont;
+                height: 234rem / @basefont;
+            }
+        
+    }
+    .box2 {
+        display: flex;
+        justify-content: space-between;
+        em {
+            img {
+                width: 186.25rem / @basefont;
+                height: 234rem / @basefont;
+            }
+        }
+    }
+}
+// 内容
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 14rem;
+    // height: 258rem / @basefont;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    // background-color: pink;
+    // text-align: center;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px ;
+    a {
+        width: 349rem / @basefont;
+        &:nth-child(2n-1) {
+           border-right: 1px solid #ccc;
+        }
+        &:nth-child(n+3) {
+            border-top: 1px solid #ccc;
+        }
+        img {
+            vertical-align: middle;
+            width: 349rem / @basefont;
+            height: 258rem / @basefont;
+        }
+    }
+    ul {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        height: 172rem / @basefont;
+        // margin: 0 auto;
+        li {
+            border-top: 1px solid #ccc;
+            flex: 1;
+            // height: 86rem / @basefont;
+            background-color: yellow;
+            img {
+                width: 140rem / @basefont;
+                height: 172rem / @basefont;
+            }
+        }
+    }
+}
+// opa1
+.opa1 {
+    img {
+        width: 100%;
+        height: 210rem / @basefont;
+    }
+}
+// 固定留白
+.block {
+    height: 100rem / @basefont;
+}
+// 底部
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 15rem;
+    // height: 100rem / @basefont;
+    ul {
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        height: 100rem / @basefont;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 22rem / @basefont;
+            flex: 20%;
+            height: 100rem / @basefont;
+            // background-color: red;
+            a {
+                color: #000;
+            }
+            span {
+                width: 48rem / @basefont;
+                height: 48rem / @basefont;
+                background: url(../images/sprite.png) no-repeat -80rem / @basefont -445rem / @basefont;
+                background-size: 154rem / @basefont;
+            }
+        }
+        img {
+            width: 48rem / @basefont;
+            height: 48rem / @basefont;
+        }
+    }
+}

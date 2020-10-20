@@ -1,0 +1,23 @@
+@gao:(30px + 100) * 9;
+@red:red;
+@blue:blue;
+div {
+    color: @red;
+    background-color: @blue;
+    height: @gao / 9 - 100;
+}
+ul {
+    li {
+        margin: 0 10px;
+        color: pink;
+        float: left;
+        list-style: none;
+        a {
+            color: @blue;
+            &:hover {
+                color: @red;
+                text-decoration: none;
+            }
+        }
+    }
+}

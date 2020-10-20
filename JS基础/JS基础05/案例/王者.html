@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Game (uname,type,blood) {
+            this.uname = uname
+            this.type = type
+            this.blood = blood
+            this.attack = function(attack) {
+                console.log(attack);
+            }
+        }
+        var zy = new Game ('赵云','战士','500')
+        console.log(zy.uname);
+        zy.attack('近战')
+    </script>
+</body>
+</html>

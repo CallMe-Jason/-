@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt('第一个数')
+        var num2 = prompt('第二个数')
+        var num3 = prompt('第三个数')
+        function app (one,two,three) {
+            if (parseFloat(one) > parseFloat(two) && parseFloat(one) > parseFloat(three)) {
+                alert(one)
+            }
+            else if (parseFloat(two) > parseFloat(one) && parseFloat(two) > parseFloat(three)) {
+                alert(two)
+            }
+            else {
+                alert(three)
+            }
+        }
+        app(num1,num2,num3)
+    </script>
+</body>
+</html>

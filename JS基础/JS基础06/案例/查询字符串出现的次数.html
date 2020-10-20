@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = 0
+        var str = 'abcoefoxyozzopp'
+        var index = str.indexOf('o')
+        while (index !== -1) {
+            console.log(`o出现的下标为${index}`);
+            index = str.indexOf('o', index + 1)
+            num += 1
+        }
+        console.log(`o出现的次数为${num}`);
+        //数组
+        var color = ['red', 'green', 'blue', 'pink', 'red', 'pink', 'red']
+        var sum = 0
+        var Index = color.indexOf('red')
+        for (var i = 0; i < color.length; i++) {
+            if (Index !== -1) {
+                console.log(`red出现的下标为${Index}`);
+                Index = color.indexOf('red', Index + 1)
+                sum += 1
+            }
+        }
+        console.log(`red出现的次数为${sum}`);
+    </script>
+</body>
+
+</html>

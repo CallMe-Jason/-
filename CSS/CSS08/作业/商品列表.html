@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: wheat;
+        }
+        .box {
+            width: 300px;
+            height: 450px;
+            background-color: white;
+        }
+        img {
+            width: 100%;
+        }
+        .box s {
+            display: inline-block;
+            margin-top: 5px;
+            text-decoration-line: none;
+            font-size: 20px;
+            color: red;
+        }
+        .box s span {
+            text-decoration-line:line-through;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .case {
+            display: inline-block;
+            width: 150px;
+            height: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        .b {
+            width: 120px;
+            height: 10px;
+            background-color: red;
+            border-radius: 10px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            transition: all .3s;
+        }
+        a {
+            display: block;
+            margin-top: 5px;
+            width: 300px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            text-decoration:none;
+            text-align: center;
+            line-height: 40px;
+        }
+        .case:hover .b {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+
+        }
+        em {
+            color: red;
+        }
+        i {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/mobile.jpg" alt="">
+        <p>Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+        <s>¥6088 <span>￥6988</span></s><br>
+        已售<em>87%</em>
+        <div class="case">
+            <div class="b"></div>
+        </div>
+        还剩<i>29</i>件
+        <a href="#">立即抢购</a>
+    </div>
+</body>
+</html>

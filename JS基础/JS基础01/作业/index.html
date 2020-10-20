@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin:auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+        button {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 50px;
+            height: 20px;
+            background-color: skyblue;
+            outline: none;
+            border: none;
+            color: white;
+        }      
+    </style>
+</head>
+<body>
+    <script>
+        alert('您好');
+        var uname = prompt('请输入您的姓名');
+        var age = prompt('请输入您的年龄');
+        var sex = prompt('请输入您的性别');
+        document.write ('姓名:',uname,'<br />','年龄:',age,'<br />','性别:',sex,'<br />','<button onclick="window.close()">确认</button>');
+    </script>
+</body>
+</html>

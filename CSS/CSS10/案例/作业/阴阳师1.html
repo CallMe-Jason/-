@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {  
+            position: relative;
+            width: 145px;
+            height: 290px;
+            background: url(images/index_z_71df05e.png) no-repeat;
+        }
+        .case img:first-child {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            width: 105px;
+            height: 105px;
+        }
+        .case img:last-child {
+            position: absolute;
+            top: 35px;
+            left: 12px;
+            animation: line 2s linear infinite;
+        }
+        @keyframes line {
+            50% {
+                top: 140px;
+            }
+            100% {
+                top: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="case">
+            <img src="images/57b280b496dee47507111c56NRN73rVj.png" alt="">
+            <img src="images/line_dd0b705.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

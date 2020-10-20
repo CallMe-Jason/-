@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = new Object() 
+        obj.uname = '鸣人'
+        obj.sex = '男'
+        obj.age = 19
+        obj.skill = function() {
+            var res = '影分身术'
+            return res
+        }
+        document.write(obj.uname)
+        document.write(obj['sex'])
+        alert(obj.age)
+        console.log(obj.skill());
+    </script>
+</body>
+</html>

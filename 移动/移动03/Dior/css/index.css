@@ -1,0 +1,356 @@
+@media (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  width: 15rem;
+}
+div {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.48rem;
+  -webkit-tap-highlight-color: transparent;
+}
+.banner {
+  position: relative;
+  width: 15rem;
+  height: 7.66rem;
+  background: -webkit-linear-gradient(left, red, blue);
+  overflow: hidden;
+}
+.banner .more {
+  margin-right: 0.8rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 0;
+  width: 1.6rem;
+  height: 0.8rem;
+  background: url(../images/more.png) no-repeat;
+  background-size: 100%;
+}
+.diro {
+  display: flex;
+  margin: 3.06rem auto 0;
+  width: 13.52rem;
+  height: 3.76rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.diro_left {
+  display: flex;
+  width: 7.4rem;
+  height: 3.76rem;
+}
+.diro_left .logo {
+  margin-top: 0.86rem;
+  margin-left: 0.54rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.diro_left .logo_right {
+  font-size: 0.48rem;
+  margin-top: 0.86rem;
+  margin-left: 0.4rem;
+  width: 4.8rem;
+  height: 1.5rem;
+}
+.diro_left .logo_right p {
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+.diro_left .logo_right span {
+  color: #ccc;
+}
+.diro_right {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 6.32rem;
+  height: 3.76rem;
+}
+.diro_right_top {
+  text-decoration: right;
+  line-height: 0.8rem;
+  margin-top: 0.6rem;
+  margin-right: 1.2rem;
+  font-size: 0.48rem;
+  width: 2.2rem;
+  height: 0.8rem;
+}
+.diro_right_bottom {
+  position: relative;
+  line-height: 0.8rem;
+  margin-top: 0.8rem;
+  margin-right: 1.2rem;
+  font-size: 0.48rem;
+  width: 2.2rem;
+  height: 0.8rem;
+  background-color: #fcdd32;
+  border-radius: 10px;
+}
+.diro_right_bottom:active em {
+  opacity: 1;
+  background-color: #ccc;
+}
+.diro_right_bottom:active a {
+  opacity: 0;
+}
+.diro_right_bottom em {
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  border-radius: 10px;
+}
+.diro_right_bottom a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 15rem;
+  height: 2.36rem;
+  text-align: center;
+}
+nav a {
+  width: 4.1rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  border-radius: 10px;
+  background-color: #fcdd32;
+}
+nav a:active {
+  background-color: #073d98;
+  color: #fff;
+}
+.recommend {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15rem;
+  height: 2.3rem;
+  vertical-align: middle;
+}
+.recommend h2 {
+  font-size: 0.8rem;
+}
+.recommend h2 span {
+  font-size: 0.4rem;
+  color: #acacac;
+  vertical-align: middle;
+}
+.main {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  height: 6.2rem;
+}
+.main a {
+  overflow: hidden;
+  width: 4.1rem;
+  height: 6.2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.main a .pic {
+  width: 4.1rem;
+  height: 2.8rem;
+  background: url(../images/shop.png) no-repeat;
+  background-size: 100%;
+}
+.main a .case1 {
+  padding: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 4.1rem;
+  height: 0.7rem;
+}
+.main a .case1 .guoqi {
+  width: 0.5rem;
+  height: 0.4rem;
+  background: url(../images/国旗.png) no-repeat;
+  background-size: 100%;
+}
+.main a .case2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: 700;
+  padding: 0 0.3rem;
+  font-size: 0.24rem;
+  width: 4.1rem;
+  height: 1.4rem;
+}
+.main a .case3 {
+  padding: 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 4.1rem;
+  height: 1.3rem;
+}
+.main a .case3::after {
+  padding-bottom: 0.2rem;
+  align-self: flex-end;
+  width: 1rem;
+  height: 0.8rem;
+  content: '';
+  background: url(../images/产品购物车.png) no-repeat;
+  background-size: 100%;
+}
+.main a .case3::before {
+  align-self: flex-end;
+  width: 1rem;
+  height: 0.8rem;
+  content: '¥25';
+  color: #e1107b;
+}
+.main2 {
+  margin-top: 0.4rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  height: 8.6rem;
+}
+.main2 a {
+  overflow: hidden;
+  width: 6.4rem;
+  height: 8.6rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.main2 a .pic {
+  width: 6.4rem;
+  height: 4.8rem;
+  background: url(../images/shop.png) no-repeat;
+  background-size: 100%;
+}
+.main2 a .case1 {
+  padding: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 6.4rem;
+  height: 0.7rem;
+}
+.main2 a .case1 .guoqi {
+  width: 0.5rem;
+  height: 0.4rem;
+  background: url(../images/国旗.png) no-repeat;
+  background-size: 100%;
+}
+.main2 a .case2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: 700;
+  padding: 0 0.3rem;
+  font-size: 0.24rem;
+  width: 6.4rem;
+  height: 1.4rem;
+}
+.main2 a .case3 {
+  padding: 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 6.4rem;
+  height: 1.3rem;
+}
+.main2 a .case3::after {
+  padding-bottom: 0.2rem;
+  align-self: flex-end;
+  width: 1rem;
+  height: 0.8rem;
+  content: '';
+  background: url(../images/产品购物车.png) no-repeat;
+  background-size: 100%;
+}
+.main2 a .case3::before {
+  align-self: flex-end;
+  width: 1rem;
+  height: 0.8rem;
+  content: '¥25';
+  color: #e1107b;
+}

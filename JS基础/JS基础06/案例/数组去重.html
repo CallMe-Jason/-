@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = ['c', 'a', 'z', 'a', 'x', 'a', 'c', 'a', 'v', 'x']
+        function unique(one) {
+            var arr = []
+            for (var i = 0; i < one.length; i++) {
+                if (arr.indexOf(one[i]) === -1) {
+                    arr.push(one[i])
+                }
+            }
+            return arr
+        }
+        var demo = unique(arr)
+        console.log(demo)
+    </script>
+</body>
+
+</html>

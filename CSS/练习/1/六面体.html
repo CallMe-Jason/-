@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            perspective: 1000px;
+        }
+        .box {
+            zoom: .6;
+            position: relative;
+            margin: 500px auto;
+            width: 500px;
+            height: 500px;
+            /* background-color: pink; */
+            transform-style: preserve-3d;
+            animation: r .8s linear infinite;
+        }
+        .box:hover {
+            animation-play-state:paused;
+        }
+        div[class^="case"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+        }
+        .case1 {
+            background-color: blue;
+            transform: translateZ(250px);
+        }
+        .case2 {
+            background-color: pink;
+            transform: translateY(-250px) rotateX(90deg);
+        }
+        .case3 {
+            background-color: red;
+            transform: translateZ(-250px);
+        }
+        .case4 {
+            background-color: yellow;
+            transform: translateY(250px) rotateX(90deg) ;
+        }
+        .case5 {
+            background-color: purple;
+            transform: translateX(-250px) rotateY(90deg);
+        }
+        .case6 {
+            background-color: green;
+            transform: translateX(250px) rotateY(90deg);
+        }
+        @keyframes r {
+            0% {
+
+            }
+            100% {
+                transform: rotate3d(1,1,0,360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="case1"></div>
+        <div class="case2"></div>
+        <div class="case3"></div>
+        <div class="case4"></div>
+        <div class="case5"></div>
+        <div class="case6"></div>
+    </div>
+</body>
+</html>

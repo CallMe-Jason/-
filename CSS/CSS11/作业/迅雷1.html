@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            right: 0;
+            -webkit-transition: .3s ease;
+            transition: .3s ease;
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, .8);
+        }
+
+        .box {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            float: left;
+            margin-top: 14px;
+            width: 78px;
+            height: 37px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .nav li {
+            position: relative;
+            display: inline-block;
+            margin-left: 2.5%;
+        }
+
+        .nav li a {
+            display: inline-block;
+            font-size: 14px;
+            color: #fff;
+            padding: 0 10px;
+            line-height: 64px;
+        }
+
+        .nav li::after {
+            /* opacity: 0; */
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transition: all .4s;
+            background-color: #fff;
+        }
+
+        .nav li:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <h1 class="logo">
+                <img src="images/xl-logo2x.png" alt="">
+            </h1>
+            <ul class="nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">产品中心</a></li>
+                <li><a href="#">区块链</a></li>
+                <li><a href="#">广告服务</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">投资者关系</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+
+</html>

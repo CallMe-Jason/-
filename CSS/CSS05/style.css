@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.w {
+    width: 1200px;
+    margin:auto;
+}
+body {
+    background-color: rgb(243, 245, 247);
+}
+/* .header>div {
+    float: left;
+} */
+.header {
+    height: 42px;
+    /* background-color: antiquewhite; */
+    margin:50px auto;
+}
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    
+}
+.nav {
+    float: left;   
+    margin-left: 60px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+    
+}
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #050505;
+    line-height: 42px;
+    
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff ;
+    color: #00a4ff;
+}
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    /* background-color: skyblue; */
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    padding-left: 15px;
+    color: #bfbfbf;
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-image: url(images/search.png);
+    /* background-repeat: no-repeat; */
+    border: none;
+}
+.header .user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+.header .user img {
+    vertical-align: middle;
+}
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .w {
+    height: 420px;
+    background:url(images/banner2.png) no-repeat top;
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background:rgba(0, 0, 0,0.3);
+}
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.subnav ul li a {
+    font-size: 14px;
+    color: #ffffff;   
+}
+.subnav ul li a:hover {
+    color: #00b4ff;
+}
+li a span {
+    float: right;
+}
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    
+}
+.course h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.course .bd {
+    padding: 0 20px;
+}
+.bd li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+.bd li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.bd li p {
+    font-size: 12px;
+    color: #a5a5a5;
+} 
+.bd a {
+    display: block;
+    height: 38px;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+.bd a:hover {
+    background-color: #00a4ff;
+    color: #fff;
+}
+.goods {
+    margin-top: 10px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, .1);
+}
+.goods h3 {
+    float: left;
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 30px;
+    color: #00a4ff;
+}
+.goods ul li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 30px;
+}
+.goods ul li a {
+    color: #000;
+}
+span {
+    margin-left: 30px;
+    color: #ccc;
+    font-weight: normal;
+}
+.goods .more {
+    float: right;
+    line-height: 60px;
+    margin-right: 30px;
+}
+.goods .more a {
+    color: #00a4ff;
+    font-size: 14px;
+}
+.box {
+    margin-top: 30px;
+}
+.box-hd {
+    height: 45px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.box-hd a {
+    margin-top: 10px;
+    margin-right: 30px;
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.box-hd a:hover {
+    color:#00a4ff ;
+}
+.box-bd {
+    width: 1225px;
+}
+.box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box-bd ul li h4 {
+    font-size: 14px;
+    color: #050505;
+    font-weight: normal;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.box-bd ul li .info {
+    font-size: 12px;
+    color: #999;
+}
+.box-bd .info span {
+    color: #ff7c2d;
+}
+.box-bd ul li:hover {
+    box-shadow: 10px 10px 10px 1px;
+}
+.w .block {
+    float: left;
+}
+.block-hd {
+    margin-top: 20px;
+}
+.block h3 {
+    float: left;
+    color: #494949;
+}
+.block ul {
+    margin-left: 400px;
+}
+.block ul li {
+    float: left;
+    margin-right: 70px;
+}
+.block ul li a {
+    font-size: 14px;
+    color: rgb(175, 175, 175);
+}
+.block ul li a:hover {
+    color: rgb(86, 192, 250);
+}
+.block-hd>a {
+    float: right;
+    font-size: 12px;
+    color: rgb(175, 175, 175);
+}
+.block-hd a:hover{
+    color: #00a4ff;
+}
+.block-bd {
+    float: left;
+    /* width: 1200px; */
+    height: 390px;
+    background-color: #fff;
+    margin-top: 23px;
+}
+.block-bd .left {
+    float: left;
+    width: 230px;
+    height: 390px;
+}
+.block-bd .left img {
+    height: 100%;
+}
+.block-bd .right {
+    float: right;
+    width: 960px;
+    height: 390px;
+    /* background-color: pink; */
+}
+.block-bd .right .top {
+    float: left; 
+    width: 960px;
+    height: 100px;
+    /* background-color: powderblue; */
+}
+.block-bd .right .bottom {
+    float: left;
+    margin-top: 20px;
+    margin-right: 16px;
+    width: 228px;
+    height: 270px;
+    /* background-color: purple; */
+}
+.block-bd .right .bottom1 {
+    float: left;
+    margin-top: 20px;
+    width: 228px;
+    height: 270px;
+    /* background-color: purple; */
+}
+.right .top img {
+    width: 100%;
+}
+.right .bottom h4,
+.right .bottom1 h4 {
+    font-size: 14px;
+    color: #050505;
+    font-weight: normal;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.right .bottom .info,
+.right .bottom1 .info {
+    font-size: 12px;
+    color: #999;
+}
+.right .bottom .info span,
+.right .bottom1 .info span {
+    color: #ff7c2d;
+}
+.block-bd .right .bottom:hover,
+.block-bd .right .bottom1:hover {
+    box-shadow: 10px 10px 10px 1px;
+}
+.box1 {
+    margin:center;
+    float: left;
+    height: 1000px;
+    background-color: rebeccapurple;
+}

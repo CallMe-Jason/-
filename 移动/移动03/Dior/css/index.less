@@ -1,0 +1,324 @@
+@import "common";
+* {
+    margin: 0;
+    padding: 0;
+}
+@fz:50;
+body {
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    width: 15rem;
+}
+div {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24rem / @fz;
+    -webkit-tap-highlight-color: transparent;
+}
+// 顶部广告
+.banner {
+    position: relative;
+    width: 15rem;
+    height: 383rem / @fz;
+    background: -webkit-linear-gradient(left,red,blue);
+    overflow: hidden;
+    .more {
+        margin-right: 40rem / @fz;
+        position: absolute;
+        top: 60rem / @fz;
+        right: 0;
+        width: 80rem / @fz;
+        height: 40rem / @fz;
+        background: url(../images/more.png) no-repeat;
+        background-size: 100%;
+    }
+}
+.diro {
+    display: flex;
+    margin: 153rem / @fz auto 0;
+    width: 676rem / @fz;
+    height: 188rem / @fz;
+    background-color: white;
+    border-radius: 10px;
+}
+.diro_left {
+    display: flex;
+    width: 370rem / @fz;
+    height: 188rem / @fz;
+    // background-color: pink;
+}
+.diro_left .logo {
+    margin-top: 43rem / @fz;
+    margin-left: 27rem / @fz;
+    width: 75rem / @fz;
+    height: 75rem / @fz;
+    background:url(../images/logo.png) no-repeat;
+    background-size: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.diro_left .logo_right {
+    font-size: 24rem / @fz;
+    margin-top: 43rem / @fz;
+    margin-left: 20rem / @fz;
+    width: 240rem / @fz;
+    height: 75rem / @fz;
+    // background-color: purple;
+}
+.diro_left .logo_right p {
+    margin-bottom: 15rem / @fz;
+    font-weight: 700;
+}
+.diro_left .logo_right span {
+    color: #ccc;
+}
+.diro_right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 316rem / @fz;
+    height: 188rem / @fz;
+    // background-color: red;
+}
+.diro_right_top {
+    text-decoration: right;
+    line-height: 40rem / @fz;
+    margin-top: 30rem / @fz;
+    margin-right: 60rem / @fz;
+    font-size: 24rem / @fz;
+    width: 110rem / @fz;
+    height: 40rem / @fz;
+    // background-color: blue;
+}
+.diro_right_bottom {
+    position: relative;
+    line-height: 40rem / @fz;
+    margin-top: 40rem / @fz;
+    margin-right: 60rem / @fz;
+    font-size: 24rem / @fz;
+    width: 110rem / @fz;
+    height: 40rem / @fz;
+    background-color: rgb(252, 221, 50);
+    border-radius: 10px;
+    &:active em{
+        opacity: 1;
+        background-color: #ccc;
+    }
+    &:active a{
+        opacity: 0;
+    }
+    em {
+        font-style: normal;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        opacity: 0;
+        border-radius: 10px;
+    }
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+    }
+}
+// 导航栏
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 15rem;
+    height: 118rem / @fz;
+    // background-color: pink;
+    text-align: center;
+    a {
+        width: 205rem / @fz;
+        height: 85rem / @fz;
+        line-height: 85rem / @fz;
+        border-radius: 10px;
+        background-color:  rgb(252, 221, 50);
+        &:active {
+            background-color: rgb(7, 61, 152);
+            color: #fff;
+        }
+    }
+}
+// 推荐
+.recommend {
+    padding-left:30rem / @fz;
+    padding-right:30rem / @fz;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15rem;
+    height: 115rem / @fz;
+    // background-color: pink;
+    vertical-align: middle;
+    h2 {
+        font-size: 40rem / @fz;
+        span {
+            font-size: 20rem / @fz;
+            color: rgb(172, 172, 172);
+            vertical-align: middle;
+        }
+    }
+}
+// 内容
+.main {
+    padding-left:30rem / @fz;
+    padding-right:30rem / @fz;
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+    height: 310rem / @fz;
+    // background-color: pink;
+    a {
+        overflow: hidden;
+        width: 205rem / @fz;
+        height: 310rem / @fz;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        .pic {
+            width: 205rem / @fz;
+            height: 140rem / @fz;
+            background:url(../images/shop.png) no-repeat;
+            background-size: 100%;
+        }
+        .case1 {
+            padding: 0 15rem / @fz;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 205rem /@fz;
+            height: 35rem / @fz;
+            // background-color: blue;
+            .guoqi {
+                width: 25rem / @fz;
+                height: 20rem / @fz;
+                background: url(../images/国旗.png) no-repeat;
+                background-size: 100%;
+            }
+        }
+        .case2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-weight: 700;
+            padding: 0 15rem / @fz;
+            font-size: 12rem / @fz;
+            width: 205rem /@fz;
+            height: 70rem / @fz;
+            // background-color: yellow;
+        }
+        .case3 {
+            padding: 0 15rem / @fz;
+            display: flex;
+            justify-content: space-between;
+            width: 205rem /@fz;
+            height: 65rem / @fz;
+            // background-color: red;
+            &::after {
+                padding-bottom: 10rem / @fz;
+                align-self: flex-end;
+                width: 50rem / @fz;
+                height: 40rem / @fz;
+                content: '';
+                background: url(../images/产品购物车.png) no-repeat;
+                background-size: 100%;
+            }
+            &::before {
+                align-self: flex-end;
+                width: 50rem / @fz;
+                height: 40rem / @fz;
+                content: '¥25';
+                color: rgb(225, 16, 123);
+                // background-color: purple;
+            }
+        }
+    }
+}
+// 内容2
+.main2 {
+    margin-top: 20rem / @fz;
+    padding-left:30rem / @fz;
+    padding-right:30rem / @fz;
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+    height: 430rem / @fz;
+    // background-color: pink;
+    a {
+        overflow: hidden;
+        width: 320rem / @fz;
+        height: 430rem / @fz;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        .pic {
+            width: 320rem / @fz;
+            height: 240rem / @fz;
+            background:url(../images/shop.png) no-repeat;
+            background-size: 100%;
+        }
+        .case1 {
+            padding: 0 15rem / @fz;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 320rem /@fz;
+            height: 35rem / @fz;
+            // background-color: blue;
+            .guoqi {
+                width: 25rem / @fz;
+                height: 20rem / @fz;
+                background: url(../images/国旗.png) no-repeat;
+                background-size: 100%;
+            }
+        }
+        .case2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-weight: 700;
+            padding: 0 15rem / @fz;
+            font-size: 12rem / @fz;
+            width: 320rem /@fz;
+            height: 70rem / @fz;
+            // background-color: yellow;
+        }
+        .case3 {
+            padding: 0 15rem / @fz;
+            display: flex;
+            justify-content: space-between;
+            width: 320rem /@fz;
+            height: 65rem / @fz;
+            // background-color: red;
+            &::after {
+                padding-bottom: 10rem / @fz;
+                align-self: flex-end;
+                width: 50rem / @fz;
+                height: 40rem / @fz;
+                content: '';
+                background: url(../images/产品购物车.png) no-repeat;
+                background-size: 100%;
+            }
+            &::before {
+                align-self: flex-end;
+                width: 50rem / @fz;
+                height: 40rem / @fz;
+                content: '¥25';
+                color: rgb(225, 16, 123);
+                // background-color: purple;
+            }
+        }
+    }
+}

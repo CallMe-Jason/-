@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            margin: 50px auto;
+            width: 300px;
+            background-color: #cccccc;
+            overflow: hidden;
+        }
+        ul {
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 10px;
+            text-align: center;
+            float: left;
+            list-style: none;
+            width: 99px;
+            border-right: 1px solid black;
+            line-height: 30px;
+        }
+        li:nth-child(3n) {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+    </div>
+</body>
+</html>

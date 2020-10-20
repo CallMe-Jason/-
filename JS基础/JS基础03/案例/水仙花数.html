@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ge = 0
+        var shi = 0
+        var bai = 0
+        for (var i = 100; i <= 999; i++) {
+            ge = i % 10
+            shi = parseInt(( i % 100) / 10 )
+            bai = parseInt(i / 100)
+            if (i == ge * ge * ge + shi * shi * shi + bai * bai * bai) {
+                document.write(i + '<br />')
+            }
+        }
+    </script>
+</body>
+</html>

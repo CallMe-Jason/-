@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            display: flex;
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: pink;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        div[class^="case"] {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="case1">1</div>
+        <div class="case2">2</div>
+        <div class="case3">3</div>
+        <div class="case4">4</div>
+        <div class="case5">5</div>
+        <div class="case6">6</div>
+    </div>
+</body>
+</html>

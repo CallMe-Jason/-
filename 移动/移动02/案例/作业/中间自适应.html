@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            display: flex;
+            height: 50px;
+            width: 100%;
+            max-width: 640px;
+            min-width: 320px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        .case1 {
+            width: 100px;
+            background-color: red;
+        }
+        .case3 {
+            width: 100px;
+            background-color: blue;
+        }
+        .case2 {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="case1"></div>
+        <div class="case2"></div>
+        <div class="case3"></div>
+    </div>
+</body>
+</html>

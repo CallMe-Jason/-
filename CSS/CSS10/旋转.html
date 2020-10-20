@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img  {
+            margin: 100px 200px;
+            width: 100px;
+            transition: all 240s;
+            transform-origin: left bottom;
+        }
+        img:hover {
+            
+            transform: rotate(9999999deg);
+            
+        }
+        div {
+            position: relative;
+            width: 250px;
+            height: 35px;
+            border: 1px solid black;
+        }
+        div a::after {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            transform: rotate(405deg);
+            border-top: none;
+            border-left: none;
+        }
+        div a:hover::after {
+            transform: rotate(225deg);
+            transition: all 2s;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <img src="../第五天代码07/images/head.png" alt="">
+    <div><a href="#"></a></div>
+</body>
+</html>

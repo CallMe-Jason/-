@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: url(images/vivo-banner-z3ys-bg.jpg) no-repeat center top;
+            background-size: cover;
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            width: 100%;
+            bottom: 40px;
+            text-align: center;
+        }
+
+        .box ul li {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            margin: 0 4px;
+            cursor: pointer;
+            /* background-color: pink; */
+        }
+
+        .box ul li span {
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            left: 50%;
+            margin-left: -20px;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .2);
+            transition: all .3s;
+        }
+
+        .box li span::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: #666;
+            transition: all .3s;
+        }
+
+        .box li:hover span {
+            height: 5px;
+        }
+
+        .box li:hover span::after {
+            width: 100%;
+            transition: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+            </li><li>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

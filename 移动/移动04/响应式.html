@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 750px;
+            margin: 0 auto;
+        }
+        .container ul li {
+            margin: 1px;
+            text-align: center;
+            line-height: 30px;
+            border: 1px solid #000;
+            list-style: none;
+            float: left;
+            width: 90px;
+            height: 30px;
+            background-color: green;
+        }
+        @media (max-width: 767px) {
+            .container {
+                width: 100%;
+            }
+            .container ul li {
+                /* border: 1px solid #000; */
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </div>
+</body>
+</html>

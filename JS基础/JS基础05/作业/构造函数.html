@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(uname,id,sex,grade) {
+            this.uname = uname
+            this.id = id
+            this.sex = sex
+            this.grade = grade
+            this.sayHi = function() {
+               alert(`Hi~我是${this.uname}`);
+            }
+         }
+            var nt = new Student('聂婷','1','beauty','高材生')
+            alert(nt.sex)
+            nt.sayHi()
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+div {
+  color: red;
+  background-color: blue;
+  height: 30px;
+}
+ul li {
+  margin: 0 10px;
+  color: pink;
+  float: left;
+  list-style: none;
+}
+ul li a {
+  color: blue;
+}
+ul li a:hover {
+  color: red;
+  text-decoration: none;
+}

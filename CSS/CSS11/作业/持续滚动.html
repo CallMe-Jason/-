@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .w {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .box .w {
+            position: relative;
+            height: 1000px;
+            background-color: #ccc;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .case {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            z-index: 100;
+        }
+        .box .w p {
+            position: relative;
+            display: inline-block;
+            width: 1920px;
+            padding-top: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            margin-left: 200px;     
+            animation: move 10s linear infinite;      
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(800px);
+            }
+            100% {
+                transform: translateX(-2500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="w">
+            <div class="case"></div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, atque numquam. Necessitatibus eaque omnis voluptatibus laboriosam reprehenderit, non pariatur, dolore dolores praesentium, tempora dolorem rerum alias rem earum. Cumque, provident?</p>
+        </div>
+    </div>
+</body>
+</html>

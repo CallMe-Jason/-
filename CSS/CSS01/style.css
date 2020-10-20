@@ -1,0 +1,13 @@
+.ziti {
+    color: blue;
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+body {
+    font-size: 50px;
+    width: 800px;
+    height: 1000px;
+    background-color: cornflowerblue;
+}

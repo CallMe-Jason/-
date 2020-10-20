@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aPP() {
+            var year = (prompt('请您输入年份'))
+            var sre = app(year)
+            if (sre) {
+                alert('闰年2月29天')
+            }
+            else {
+                alert('平年2月28天')
+            }
+        }
+        function app (one) {  
+            var res = false
+            if (one % 4 === 0 && one % 100 != 0 || one % 400 === 0) {
+                res = true
+            }
+            return res;
+        }
+        aPP()
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function App(name,sex,age) {
+            this.name = name
+            this.sex = sex
+            this.age = age
+            this.fn = function (behaviour) {
+                document.write(behaviour)
+            }
+        }
+        var zy = new App('赵云','男',18)
+        document.write(zy.name)
+        zy.fn('抢孩子')
+        console.log(zy);
+    </script>
+</body>
+</html>

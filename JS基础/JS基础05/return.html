@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function app(one) {
+            for (var i = 2; i < one; i++) {
+                if (one % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        for (var j = 2; j <= 100; j++) {
+            var res = app(j)
+            if (res == true) {
+                document.write(j + '是质数<br />')
+            }
+        }
+    </script>
+</body>
+</html>

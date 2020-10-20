@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = [12,35,57,23,65,67,23,14]
+        var num2 = [12,35,57,23,65,67,23,14,2,5,7,83,1]
+        var num3 = [12,35,57,23,65,67,23,14,1,5,78,3]
+        function app (one) {
+            for (var i = 0; i < one.length - 1; i++) {
+            for (var j = 0; j < one.length - i - 1; j++) {
+            if (one[j] > one[j + 1]) {
+                var temp =one[j]
+                one[j] = one[j + 1]
+                one[j + 1] = temp
+            }
+        }
+        }
+        }
+        app(num2)
+        document.write(num2)
+    </script>
+</body>
+
+</html>

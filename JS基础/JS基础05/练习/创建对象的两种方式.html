@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //字面量
+        var obj = {
+            uname:'黄忠',
+            sex:'男',
+            age:'18',
+            fn:function() {
+                document.write('射箭')
+            }
+        }
+        document.write(obj.uname)
+        obj.fn()
+        //new object
+        var oh = new Object
+        obj.uname = '马超'
+        obj.sex = '男'
+        obj.age = 19
+        obj.fn = function() {
+            document.write('骑马')
+        }
+        document.write(obj['uname'])
+        obj.fn()
+    </script>
+</body>
+</html>

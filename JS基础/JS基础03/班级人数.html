@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = prompt('班级人数')
+        var he = 0
+        var pingjun = 0
+        for (var i = 1; i <= num; i++) {
+            var sum = prompt(`输入第${i}个学生的成绩`)
+            he = he + parseFloat(sum) 
+        }
+        pingjun = he / parseFloat(num)
+        document.write('和：' + he + '<br />')
+        document.write('平均：' + pingjun)
+    </script>
+</body>
+</html>

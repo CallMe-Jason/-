@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var num = 1;
+        // function demo() {
+        //     console.log(num);
+        //     function demoSon() {
+        //         num = 3;
+        //     }
+        //     var num = 2
+        //     demoSon();
+        // }
+        // demo();
+        //相当于
+        var num = 1;
+        var num
+        //num预解析，但是没有赋值
+        function demo() {
+            //没有赋值输出则undefined
+            console.log(num);
+            function demoSon() {
+                num = 3;
+            }
+            var num = 2
+            demoSon();
+            
+        }
+        demo();
+    </script>
+</body>
+
+</html>

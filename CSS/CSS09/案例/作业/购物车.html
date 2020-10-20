@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?fo77jd');
+            src: url('fonts/icomoon.eot?fo77jd#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?fo77jd') format('truetype'),
+                url('fonts/icomoon.woff?fo77jd') format('woff'),
+                url('fonts/icomoon.svg?fo77jd#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            font-family: 'icomoon';
+            position: relative;
+            margin: 50px auto;
+            width: 500px;
+            height: 500px;
+            /* border:1px dashed red; */
+        }
+
+        a {
+            text-decoration: none;
+            color: pink;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .icon {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            margin-left: -15px;
+            font-size: 30px;
+        }
+
+        .icon:hover {
+            color: red;
+        }
+
+        .case {
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -16px;
+            left: 50%;
+            margin-left: -33px;
+            width: 67px;
+            height: 32px;
+            background: url(images/car.png);
+        }
+
+        .case:hover {
+            background-position: left bottom;
+        }
+
+        ul li {
+            /* border: 1px solid blue; */
+            background-image: url(images/1.jpg);
+        }
+
+        .a {
+            position: absolute;
+            width: 100px;
+            height: 75px;
+            background-position: 0 90px;
+        }
+
+        .d {
+            position: absolute;
+            left: 200px;
+            width: 100px;
+            height: 75px;
+            background-position: -110px -210px;
+        }
+
+        .e {
+            position: absolute;
+            left: 400px;
+            width: 100px;
+            height: 75px;
+            background-position: -210px 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li class="a"></li>
+            <li class="d"></li>
+            <li class="e"></li>
+        </ul>
+        <div class="icon"><a href="王者.html" target="_block"></a></div>
+        <div class="case"></div>
+    </div>
+</body>
+
+</html>

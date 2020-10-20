@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            margin: 50px auto;
+            /* border: 1px solid red; */
+            width: 500px;
+            height: 500px;
+        }
+
+        .box p {
+            padding-left: 30px;
+        }
+
+        .case1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            /* border: 1px solid blue; */
+            background-image: url(images/sprites.png);
+            background-repeat: no-repeat;
+            background-position: -2px -185px;
+        }
+
+        .case2 {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 740px;
+            height: 108px;
+            border: 1px solid #000;
+        }
+
+        .left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: 108px;
+            /* border: 1px solid pink; */
+            background-image: url(images/sprites.png);
+            background-repeat: no-repeat;
+            background-position: -2px -350px;
+        }
+
+        .right p {
+            padding-left: 240px;
+            line-height: 108px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="case1"></div>
+        <p>精灵图的本质是处理网页背景图像的一种技术</p>
+        <div class="case2">
+            <div class="left"></div>
+            <div class="right">
+                <p>可以有效减少服务器接受和请求的次数，提高页面的加载速度</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        .box {
+            transform-style: preserve-3d;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            /* border: 1px solid #ccc; */
+            transition: all 2s;
+        }
+        .box:hover {
+            transform: rotate3d(1,0,0,60deg);
+        }
+        .case1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+        }
+        .case2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: khaki;
+            transform: rotate3d(1,0,0,45deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="case1"></div>
+        <div class="case2"></div>
+    </div>
+</body>
+</html>

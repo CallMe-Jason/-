@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           background-color: #333;
+        }
+        .map {
+            position: relative;
+            margin: 0 auto;
+            width: 747px;
+            height: 616px;
+            background: url(../map.png) no-repeat;
+        }
+        .city {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            right: 181px;
+            top: 227px;
+            /* background-color: #09f; */
+        }
+        .tb {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            right: 80px;
+            top: 500px;
+            /* background-color: #09f; */
+        }
+        .gz {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            right: 180px;
+            top: 530px;
+            /* background-color: #09f; */
+        }
+        .tb .datted {
+            background-color: red;
+        }
+        .datted {
+            width: 8px;
+            height: 8px;
+            background-color: #09f;
+            border-radius: 50%;
+        }
+        div[class^="case"] {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 12px #09f;
+            animation: abc 1s linear infinite;
+            border-radius: 50%;
+        }
+        div[class^="box"] {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 12px red;
+            animation: abc 1s linear infinite;
+            border-radius: 50%;
+        }
+        .case1 {
+            animation-delay: 0s;
+        }
+        .map .city .case2 {
+            animation-delay: .4s;
+        }
+        .map .city .case3 {
+            animation-delay: .8s;
+        }
+        .map .tb .box2 {
+            animation-delay: .4s;
+        }
+        .map .tb .box3 {
+            animation-delay: .8s;
+        }
+        @keyframes abc {
+            70%{
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+                
+            }
+            100%{
+               width: 70px;
+               height: 70px;
+                opacity: 0;
+            }
+        }
+        .map .gz .case2 {
+            animation-delay: .4s;
+        }
+        .map .gz .case3 {
+            animation-delay: .8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="map">
+       <div class="city">
+        <div class="datted"></div>
+        <div class="case1"></div>
+        <div class="case2"></div>
+        <div class="case3"></div>
+       </div>
+       <div class="tb">
+        <div class="datted"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+       </div>
+       <div class="gz">
+        <div class="datted"></div>
+        <div class="case1"></div>
+        <div class="case2"></div>
+        <div class="case3"></div>
+       </div>
+    </div>
+</body>
+</html>

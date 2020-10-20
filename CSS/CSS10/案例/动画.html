@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes abc {
+            25% {
+                transform: translate(1000px,0);
+                width: 200px;
+            }
+            50% {
+                transform: translate(1000px,500px);
+                height:200px;
+                border-radius: 50%;
+            }
+            100% {
+                transform: translate(0px,500px);
+                width: 300px;
+            }
+            /* 100% {
+                transform: translate(0,0);
+            } */
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation-name: abc;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* animation-fill-mode:forwards; */
+        }
+        div:hover {
+            animation-play-state:paused ;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 头35 腿94
+        var head = prompt('请输入头的数量')
+        var leg = prompt('请输入腿的数量')
+        for (var chicken = 0; chicken <= parseInt(head); chicken++) {
+            if (2 * chicken + 4 * (parseInt(head) - chicken) == parseInt(leg)) {
+                document.write(`鸡的数量为${chicken},兔的数量为${head - chicken}`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 171px;
+        }
+        .box1:hover {
+            animation-play-state:paused;
+        }
+        .box1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 154px;
+            height: 121px;
+        }
+        .case1 {
+            position: absolute;
+            width: 154px;
+            height: 121px;
+            background: url(images/txgc_6d0e9e5.png) no-repeat;
+            animation: yys 1s steps(2) infinite,move 10s linear infinite;
+        }
+        .box2 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 167px;
+            height: 176px;
+        }
+        .case2 {
+            position: absolute;
+            width: 167px;
+            height: 176px;
+            background: url(images/txgh_fee2457.png) no-repeat;
+            animation: yys 1s steps(2) infinite,move1 10s linear 1s infinite;
+            opacity: 0;
+        }
+        .box3 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 161px;
+            height: 149px;
+        }
+        .case3 {
+            position: absolute;
+            width: 161px;
+            height: 149px;
+            background: url(images/txgl_c15cfd8.png) no-repeat;
+            animation: yys 1s steps(2) infinite,move2 10s linear 2s infinite;
+            opacity: 0;
+        }
+        .box4 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 171px;
+            height: 157px;
+        }
+        .case4 {
+            position: absolute;
+            width: 171px;
+            height: 157px;
+            background: url(images/txgq_d281c9b.png) no-repeat;
+            animation: yys 1s steps(2) infinite,move3 10s linear 3s infinite;
+            opacity: 0;
+        }
+        @keyframes yys {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -319px 0;
+            }
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(1980px);
+            }
+        }
+        @keyframes move1 {
+            0% {
+                transform: translateX(-200px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(1980px);
+                opacity: 1;
+            }
+        }
+        @keyframes move2 {
+            0% {
+                transform: translateX(-200px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(1980px);
+                opacity: 1;
+            }
+        }
+        @keyframes move3 {
+            0% {
+                transform: translateX(-200px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(1980px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="case1"></div>
+        </div>
+        <div class="box2">
+            <div class="case2"></div>
+        </div>
+        <div class="box3">
+            <div class="case3"></div>
+        </div>
+        <div class="box4">
+            <div class="case4"></div>
+        </div>
+    </div>
+</body>
+</html>

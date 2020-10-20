@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 设置body背景颜色 */
+        body {
+            background-color: wheat;
+        }
+        /* 清除无序列表前面的小圆点 */
+        li {
+            list-style: none;
+        }
+        /* 父盒子 */
+        .box {
+            width: 1150px;
+            height: 390px;
+            background-color: #fff;
+            margin: 100px auto;
+        }
+        /* 左子盒子 */
+        .left {
+            width: 350px;
+            height: 390px;
+            /* background-color:aquamarine; */
+            float: left;
+        }
+        /* 中子盒子 */
+        .center {
+            width: 350px;
+            height: 390px;
+            /* background-color: antiquewhite; */
+            float: left;
+            margin: 0 50px;
+        }
+        /* 右子盒子 */
+        .right {
+            width: 350px;
+            height: 390px;
+            /* background-color: burlywood; */
+            float:right;
+        }
+        /* 设置左子盒子小li之间的缝隙 */
+        .left ul li {
+            width: 170px;
+            height: 190px;
+            /* background-color: cadetblue; */
+            float: left;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        /* 设置右子盒子小li之间的缝隙 */
+        .right ul li {
+            width: 170px;
+            height: 190px;
+            /* background-color: cadetblue; */
+            float: right;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        /* 设置左子盒子右边两个盒子的位置 */
+        .left ul li.last {
+           margin-right: 0;
+        }
+        /* 设置右子盒子左边两个盒子的位置 */
+        .right ul li.last {
+          margin-left:0;
+
+        }
+        /* 鼠标移动到图片上时有阴影 */
+        .left ul li:hover,
+        .right ul li:hover {
+            box-shadow: 10px 10px 10px 1px;
+        }
+        .center:hover {
+            box-shadow: 10px 10px 10px 1px;
+        }
+    </style>
+</head>
+<body>
+    <!-- box大盒子里有三个子盒子left center right left 和 right里又有四个小li -->
+    <div class="box">
+        <div class="left">
+            <ul>
+                <li>
+                    <img src="京东图片素材/left01.png" alt="">
+                </li>
+                <li class="last">
+                    <img src="京东图片素材/left02.png" alt="">
+                </li>
+                <li>
+                    <img src="京东图片素材/left03.png" alt="">
+                </li>
+                <li class="last">
+                    <img src="京东图片素材/left04.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+            <img src="京东图片素材/center.png" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <img src="京东图片素材/right01.png" alt="">
+                </li>
+                <li class="last">
+                    <img src="京东图片素材/right02.png" alt="">
+                </li>
+                <li>
+                    <img src="京东图片素材/right03.png" alt="">
+                </li>
+                <li class="last">
+                    <img src="京东图片素材/right04.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .pic {
+            position: relative;
+            margin: 20px auto;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+        }
+        .son {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, .3);
+            width: 500px;
+            height: 500px;
+        }
+        .pic:hover .son {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <div class="son">
+
+        </div>
+    </div>
+</body>
+</html>

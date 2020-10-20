@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['red','blue','green','yellow','pink','purple','orange']
+        var str = ''
+        var stt = '🐂'
+        for (var i = 0; i < arr.length; i++) {
+            str += arr[i] + stt
+        }
+        document.write(str + '<br />')
+        var arr1 = ['red','blue','green','yellow','pink','purple','orange','🐂']
+        var sum  = arr1.join('🌟')
+        document.write(sum)
+    </script>
+</body>
+</html>

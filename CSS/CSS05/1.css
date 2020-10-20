@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.w {
+    width: 1200px;
+    height: 5000px;
+    margin: auto;
+}
+.top {
+    margin-top: 50px;
+    height: 300px;
+    background-color: rebeccapurple;
+    margin-bottom: 20px;
+}
+.top .box1 {
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-color:skyblue;
+}
+.top .box1 .b1 {
+    margin-bottom: 20px;
+    float: left;
+    width: 300px;
+    height: 80px;
+    background-color: slategray;
+}
+.top .box2 {
+    float: right;
+    width: 800px;
+    height: 300px;
+    background-color: skyblue;
+}
+.top .box2 .b1 {
+    margin-right: 10px;
+    float: left;
+    width: 260px;
+    height: 260px;
+    background-color: slategray;
+}
+.top .box2 .b2 {
+    margin-right: 0;
+    float: left;
+    width: 260px;
+    height: 260px;
+    background-color: slategray;
+}
+.top .box2 .b1,
+.top .box2 .b2 {
+    margin-top: 20px;
+}
+.center {
+    height: 800px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+.center .box1 {
+    float: left;
+    width: 300px;
+    height: 800px;
+    background-color: skyblue;
+}
+.center .box2 {
+    float: right;
+    width: 800px;
+    height: 200px;
+    background-color: skyblue;
+}
+.center .box3 {
+    margin-top: 50px;
+    float: right;
+    width: 800px;
+    height: 550px;
+    background-color: skyblue;
+}
+.center .box3 ul li {
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;
+    width: 80px;
+    height: 245px;
+    background-color: slategray;
+}
+.center .box3 .d1 {
+    margin-right: 0;
+}
+.bottom {
+    height: 200px;
+    background-color: royalblue;
+}
+.bottom .box1 {
+    float: left;
+    margin-top: 50px;
+    width: 1200px;
+    height: 100px;
+    background-color: skyblue;
+}

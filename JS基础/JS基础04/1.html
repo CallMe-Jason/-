@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var num = prompt('请输入数组元素个数')
+            var arr = []
+            for (var i = 0; i <= Number(num - 1); i++) {
+                var sum = Number(prompt(`请输入索引号为${i}的元素值`))
+                arr.push(sum)
+            }
+            document.write(`输入的数组为${arr}<br />`)
+            for (var x = 0; x < arr.length; x++) {
+                for (var y = 0; y < arr.length; y++) {
+                    if (arr[y] > arr[y + 1]) {
+                        var temp = arr[y]
+                            arr[y] = arr[y + 1]
+                            arr[y + 1] = temp
+                    }
+                }
+            }
+            document.write(`从小到大的顺序为${arr}<br />`)
+            arr.reverse()
+            document.write(`从大到小的顺序为${arr}<br />`)
+    </script>
+</body>
+</html>

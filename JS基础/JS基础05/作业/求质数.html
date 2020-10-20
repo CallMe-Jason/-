@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = Number(prompt('请输入求多少以内的质数'))
+        function app (one) {
+            for (var i = 2; i < one; i++) {
+                if (one % i == 0) {
+                    return false
+                }
+             }
+             return true
+        }
+       function aPP() {
+           for (var j = 1; j <=num; j++) {
+               var res = app(j)
+               if (res) {
+                   document.write(j + '是质数<br />')
+               }
+           }
+       }
+       aPP()
+    </script>
+</body>
+</html>

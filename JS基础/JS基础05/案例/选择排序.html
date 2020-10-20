@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,23,14,12,312,4,124,12,412,4,12,4214,2141]
+        for (var i = 0; i < arr.length - 1; i++) {
+            var min = i
+        for (var j = 1 + i; j < arr.length; j++) {
+            if (arr[j] < arr[min]) {
+                min = j
+            }
+
+        }   
+        var temp = arr[i]
+            arr[i] = arr[min]
+            arr[min] = temp
+           
+        }
+        document.write(arr)
+    </script>
+</body>
+</html>

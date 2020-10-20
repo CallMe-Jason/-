@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto;
+            background: url(images/bg_81ab3d6.jpg) no-repeat -200px 0;
+        }
+        .box {
+           position: absolute;
+           top: 280px;
+           right: 350px;
+           width: 85px;
+           height: 85px;
+           background-color: pink;
+           background: url(images/index_z_9769688.png) no-repeat -748px -823px;
+           animation: r 2s linear infinite;
+        }
+        @keyframes r {
+            100% {
+                transform: rotate(360deg);
+                transform-origin: center;
+            }
+        }
+        .case::after {
+            display: block;
+            width: 20px;
+            height: 30px;
+            position: absolute;
+            top: 310px;
+            right: 380px;
+            content: '';
+            background: url(images/index_z_9769688.png) no-repeat -2290px -107px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="case"></div>
+</body>
+</html>

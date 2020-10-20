@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //对象的属性是不会重复出来的，必须是唯一的，把字符串的每一个字符取出来，看看对象里有没有该属性，如果没有，就给这个对象添加该属性，并且属性值设置为1，如果有，就在该属性上加1
+        var str = 'oabcoefoxyozzopp'
+        //新建一个空对象
+        var obj = {}
+        //遍历字符串，依次将字符串每一个字符取出来
+        for (var i = 0; i < str.length; i++) {
+            //	先看看这个字符在对象里有没有该属性
+            var c = str[i]
+            //if (对象里有这个属性) {
+            // 在其原来的属性值基础上加1
+            //}else {
+            //没有就给这个对象添加该属性
+            //}
+            if (obj.hasOwnProperty(c)) {
+                obj[c] += 1
+            } else {
+                obj[c] = 1
+            }
+        }
+        var max = 0
+        var ch = ''
+        for (var k in obj) {
+            if (obj[k] > max) {
+                max = obj[k]
+                ch = k
+            }
+        }
+        console.log(max)
+        console.log(ch)
+    </script>
+</body>
+
+</html>

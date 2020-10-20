@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            perspective: 1000px;
+            position: relative;
+            list-style: none;
+            width: 200px;
+            height: 50px;
+            margin: 200px auto;
+        }
+        .box {
+            transform-style: preserve-3d;
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            transition: all 1s;
+            /* transform: rotateY(45deg); */
+            animation: asd .001s linear infinite;
+        }
+        .front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            z-index: 1;
+            transform: translateZ(43px);
+        }
+        .bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: purple;
+            transform: rotateX(60deg) translateZ(43px);
+        }
+        .hou {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            z-index: 1;
+            transform: rotateX(120deg) translateZ(43px);
+        }
+        .shang {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            z-index: 1;
+            transform: rotateX(180deg) translateZ(43px);
+        }
+        .d {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+            z-index: 1;
+            transform: rotateX(240deg) translateZ(43px);
+        }
+        .d1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            z-index: 1;
+            transform: rotateX(300deg) translateZ(43px);
+        }
+        @keyframes asd {
+            100% {
+                transform: rotateX(360deg);
+            }
+        }
+        .box:hover {
+            animation-play-state:paused;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front"></div>
+                <div class="bottom"></div>
+                <div class="hou"></div>
+                <div class="shang"></div>
+                <div class="d"></div>
+                <div class="d1"></div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
