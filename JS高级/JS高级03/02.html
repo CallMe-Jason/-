@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>刘憨憨</li>
+        <li>刘三岁</li>
+        <li>都是刘皓东</li>
+        <li>大猪蹄子</li>
+    </ul>
+    <script>
+        //获取到所有的li
+        var lis = document.querySelectorAll('li')
+        for (var i = 0; i < lis.length;i++){
+            //立即执行函数，将i作为参数传入
+           (function (i) {
+            // lis[i].onclick=function(){
+            //     //打印出当前li的下标
+            //     console.log(i);
+            // }
+            setTimeout(function () {
+                console.log(lis[i].innerHTML);
+            },2000)
+           })(i)
+        }
+
+    </script>
+</body>
+</html>
