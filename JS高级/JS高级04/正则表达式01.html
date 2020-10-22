@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .right {
+            color: green;
+        }
+        .wrong {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id=""><span>请输入</span>
+    <script>
+        var inp = document.querySelector('input')
+        var span = document.querySelector('span')
+        var rg = /^[a-zA-Z0-9_-]{6,16}$/
+        inp.addEventListener("blur",function(){
+            if(rg.test(inp.value)) {
+                // console.log(1);
+                span.className = 'right'
+                span.innerHTML = '输入正确'
+            }else {
+                // console.log(2);
+                span.className = 'wrong'
+                span.innerHTML = '输入不正确'
+            }
+        })
+    </script>
+</body>
+</html>
