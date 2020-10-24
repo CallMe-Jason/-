@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var name = 'window'
+            let o = {
+                name:'zs',
+                sayHi:function(){
+                    console.log(this.name);
+                    setTimeout(()=>{
+                        console.log(this.name);
+                    },1000)
+                }
+            }
+            let p ={name: 'ls'}
+            o.sayHi.call(p)
+            //箭头函数的this指向指向函数定义位置中的this
+    </script>
+</body>
+</html>
