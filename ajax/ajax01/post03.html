@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <button>获取</button>
+    <script>
+        $('button').on('click',function() {
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养1》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养2》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养3》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养4》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养5》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养6》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养7》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养8》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养9》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养10》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            // $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《小姐姐的自我修养11》',author:'紫阳的小迷妹',publisher:'56期前端出版社'},res => console.log(res))
+            $.post('http://www.liulongbin.top:3006/api/addbook',{bookname:'《大司马》',author:'芜湖',publisher:'起飞'},res => console.log(res))
+        })
+       setInterval(function(){
+        $('button').click()
+       },15000)
+    </script>
+</body>
+</html>

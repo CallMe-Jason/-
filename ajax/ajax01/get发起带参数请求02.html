@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <button>聂婷</button>
+    <script>
+        $('button').on('click',function(){
+            $.get('http://www.liulongbin.top:3006/api/getbooks',{id:1},res => console.log(res))
+        })
+    </script>
+</body>
+</html>
