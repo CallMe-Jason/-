@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/news.css" />
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/template-web.js"></script>
+  </head>
+  <body>
+
+    <div id="news-list">
+     
+    </div>
+    <script type="text/html" id = 'id'>
+      {{each data}}
+      <div class="news-item">
+        <img class="thumb" src="{{'http://www.liulongbin.top:3006' + $value.img}}" alt="" />
+        <div class="right-box">
+          <h1 class="title">{{$value.title}}</h1>
+          <div class="tags">
+            {{each $value.tags}}
+            <span>{{$value}}</span>
+            {{/each}}
+          </div>
+          <div class="footer">
+            <div>
+              <span>{{$value.source}}</span>&nbsp;&nbsp;
+              <span>{{$value.time}}</span>
+            </div>
+            <span>{{$value.cmtcount}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </script>
+      <script>
+        get()
+        function get(){
+          $.ajax({
+            type : 'get',
+            url : 'http://www.liulongbin.top:3006/api/news',
+            success : res => {
+             if (res.status !== 200) return alert('失败')
+             res.data.forEach(item => item.tags = item.tags.split(','))
+             console.log(res);
+             var str = template('id',res)
+             $('#news-list').html(str)
+            }
+          })
+        }
+      </script>
+  </body>
+</html>

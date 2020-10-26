@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <script src="../jquery.min.js"></script>
+    <script src="../template-web.js"></script>
+</head>
+<body>
+    <div class="container"></div>
+    <script type="text/html" id='id'>
+        <!-- 模版 -->
+        <h1 style='color:red;border:1px solid #ccc'>{{name}}</h1>
+        <h2 style='border:1px solid #ccc'>{{age}}</h2>
+    </script>
+    <script>
+        // 数据
+        let data = {
+            name : 'zs',
+            age : 20
+        }
+        // 调用
+        let str = template('id',data)//一个ID一个数据
+        //渲染
+        $('.container').html(str)
+    </script>
+</body>
+</html>
