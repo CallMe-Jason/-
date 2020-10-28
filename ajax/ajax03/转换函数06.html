@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function resolveData(data) {
+            var arr = []
+            for (var k in data) {
+                var str = k + '=' + data[k]
+                arr.push(str)
+            }
+            return arr.join('&')
+        }
+        function itHeiMa(one) {
+            var xhr = new XMLHttpRequest()
+            var qs = resolveData(one.data)
+            if (one.method.toUpperCase() === 'GET') {
+                // 发起GET请求
+                xhr.open(one.method, one.url + '?' + qs)
+                xhr.send()
+            } else if (one.method.toUpperCase() === 'POST') {
+                // 发起POST请求
+                xhr.open(one.method, one.url)
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+                xhr.send(qs)
+            }
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var result = JSON.parse(xhr.responseText)
+                    one.success(result)
+                }
+            }
+        }
+        itHeiMa({
+            method: 'post',
+            url: 'http://www.liulongbin.top:3006/api/addbook',
+            data: {
+                bookname: '月薪过万',
+                author: '给爷冲',
+                publisher: '不配拥有姓名的人'
+            },
+            success: function (res) {
+                console.log(res)
+            }
+        })
+    </script>
+</body>
+
+</html>

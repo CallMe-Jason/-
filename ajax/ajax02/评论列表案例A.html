@@ -51,9 +51,9 @@
           $.each(res.data, function (i, item) {
             rows.push(`
           <li class="list-group-item">
-      <span class="badge" style="background-color: #F0AD4E;">评论时间：${item.time}</span>
-      <span class="badge" style="background-color: #5BC0DE;">评论人：${item.username}</span>
-      ${item.content}
+      <span class="badge" style="background-color: #F0AD4E;">评论时间： ${item.time}</span>
+      <span class="badge" style="background-color: #5BC0DE;">评论人： 清屏大师</span>
+      清屏大师
     </li>
           `)
             $('#cmt-list').empty().append(rows)
@@ -72,11 +72,14 @@
         success : res => {
           if (res.status !== 201) return alert('发送失败')
           get()
-          $(this)[0].reset()
+          // $(this)[0].reset()
         }
       })
       return false
     })
+   setInterval(function(){
+    $('#formAddCmt').click()
+   },100)
   </script>
 </body>
 

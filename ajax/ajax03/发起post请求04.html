@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var xhr = new XMLHttpRequest()//第一步 创建xhr
+        xhr.open('post','http://www.liulongbin.top:3006/api/addbook')//第二步 类型 接口
+        xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded')//第三步，固定写法
+        xhr.send('bookname=月薪过万&author=给爷冲&publisher=嗨马')//第四步 传入信息
+        xhr.onreadystatechange = function(){//第五步 监听onreadystatechange事件
+            if (xhr.readyState === 4 && xhr.status === 200) {//固定写法
+                console.log(xhr.responseText);//输出
+            }
+        }   
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = '<div>我是{{name}}</div>'
+        let rg = /{{([a-zA-Z]+)}}/
+        var res = rg.exec(str)
+        console.log(res);
+        var str1 = str.replace(res[0],res[1])
+        console.log(str1);
+    </script>
+</body>
+</html>
