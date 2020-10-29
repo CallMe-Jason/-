@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <!-- 导入页面的基本样式 -->
+  <link rel="stylesheet" href="./css/search.css" />
+  <!-- 导入 jQuery -->
+  <script src="./lib/jquery.js"></script>
+  <script src="./lib/template-web.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="./images/taobao_logo.png" alt="" class="logo" />
+
+    <div class="box">
+      <!-- tab 栏 -->
+      <div class="tabs">
+        <div class="tab-active">宝贝</div>
+        <div>店铺</div>
+      </div>
+      <!-- 搜索区域（搜索框和搜索按钮） -->
+      <div class="search-box">
+        <input id='ipt' type="text" class="ipt" placeholder="请输入要搜索的内容" /><button class="btnSearch">
+          搜索
+        </button>
+      </div>
+      <!-- 搜索建议列表 -->
+      <div id="suggest-list">
+        <!-- <div class="suggest-item">黑马程序员</div>
+        <div class="suggest-item">黑马程序员</div> -->
+      </div>
+    </div>
+  </div>
+  <script type=text/html id='id'>
+    <!-- 定义模版 -->
+    {{each result}}
+    <div class='suggest-item'>{{$value[0]}}</div>
+    {{/each}}
+  </script>
+  <script>
+    var timer = null//防抖声明
+    function fangDou(kw){
+      timer = setTimeout(function(){//定时器
+        get(kw)//调用获取
+      },500)
+    }
+    $('#ipt').on('keyup',function(){//键盘弹起触发
+      clearTimeout(timer)//先清除定时器
+      let keyWords = $(this).val().trim()//获取输入框的内容
+      if (keyWords === '') return $('#suggest-list').empty().hide()//如果没有值则清空小盒子
+      // console.log(keyWords)
+      // get(keyWords)
+      fangDou(keyWords)//防抖，获取
+    })
+    
+    function get(kw){//获取
+      $.ajax({//JSONP
+        url : 'http://suggest.taobao.com/sug?q=' + kw,
+        dataType : 'jsonp',
+        success : res => {
+            console.log(res);
+            render(res)//渲染
+        }
+      })
+    }
+    function render(res){
+      if(res.result.length <= 0) return //如果没哟值返回
+      var str = template('id',res)//使用模版渲染
+      $('#suggest-list').html(str).show()//渲染
+    }
+  </script>
+</body>
+
+</html>

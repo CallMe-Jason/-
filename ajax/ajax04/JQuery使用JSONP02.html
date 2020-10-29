@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            $.ajax({
+                url : 'http://www.liulongbin.top:3006/api/jsonp?name=月薪过万&hobby=给爷冲',
+                dataType : 'jsonp',
+                success : res => {
+                    console.log(res);
+                }
+            })
+        })
+    </script>
+</body>
+</html>

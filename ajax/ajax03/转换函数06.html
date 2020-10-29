@@ -9,36 +9,36 @@
 
 <body>
     <script>
-        function resolveData(data) {
-            var arr = []
-            for (var k in data) {
-                var str = k + '=' + data[k]
-                arr.push(str)
+        function resolveData(data) {//转换函数
+            var arr = []//空数组
+            for (var k in data) {//遍历对象
+                var str = k + '=' + data[k]//把对象的键值对变成查询字符串的格式赋值给str
+                arr.push(str)//把每一个键值对放到数组里
             }
-            return arr.join('&')
+            return arr.join('&')//用&分割每个元素转换成字符串
         }
         function itHeiMa(one) {
-            var xhr = new XMLHttpRequest()
-            var qs = resolveData(one.data)
-            if (one.method.toUpperCase() === 'GET') {
+            var xhr = new XMLHttpRequest()//第一步
+            var qs = resolveData(one.data)//把数据转换赋值给qs
+            if (one.method.toUpperCase() === 'GET') {//如果是获取
                 // 发起GET请求
-                xhr.open(one.method, one.url + '?' + qs)
-                xhr.send()
-            } else if (one.method.toUpperCase() === 'POST') {
+                xhr.open(one.method, one.url + '?' + qs)//写入它的方式，接口，和查询字符串 第二步
+                xhr.send()//第三步
+            } else if (one.method.toUpperCase() === 'POST') {//如果是上传
                 // 发起POST请求
-                xhr.open(one.method, one.url)
-                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-                xhr.send(qs)
+                xhr.open(one.method, one.url)//方式，接口 第二步
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')//固定写法，发送头，第三步
+                xhr.send(qs)//第四步，发送转换好的数据
             }
 
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    var result = JSON.parse(xhr.responseText)
-                    one.success(result)
+            xhr.onreadystatechange = function () {//执行最后一步
+                if (xhr.readyState === 4 && xhr.status === 200) {//数据通过，并传输完成
+                    var result = JSON.parse(xhr.responseText)//把返回的数据转换成JS对象，并赋值给result
+                    one.success(result)//让形参的success接收这个值
                 }
             }
         }
-        itHeiMa({
+        itHeiMa({//调用，实参为数据
             method: 'post',
             url: 'http://www.liulongbin.top:3006/api/addbook',
             data: {
