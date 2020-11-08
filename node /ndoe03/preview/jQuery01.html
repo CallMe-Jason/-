@@ -1,0 +1,156 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:jQuery01</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="jquery-javascript-">jQuery就是javaScript库</h1>
+<hr>
+<h2 id="-">入口函数</h2>
+<pre><code class="lang-js">//等DOM元素加载完成再执行
+$(document).ready(function() {
+
+})
+
+
+//等DOM元素加载完成再执行
+$(function(){
+  //得到一个jQuery对象 并隐藏
+  $(&#39;div&#39;).hide()
+  })
+</code></pre>
+<hr>
+<h2 id="-jquery-dom-">区分jQuery对象和DOM对象</h2>
+<h3 id="dom-">DOM对象</h3>
+<p>通过原生的JS方法获取到的标签对象就是DOM对象</p>
+<h3 id="jquery-">jQuery对象</h3>
+<p>通过$(&#39;css选择器&#39;)这个方法获取到的对象，都是jQuery对象</p>
+<p>jQuery中提供了大量的方法，它只能jQuery对象来调用</p>
+<h3 id="jquery-dom-">jQuery对象与DOM对象的相互转换</h3>
+<pre><code class="lang-js">//DOM转换为jQuery
+$(DOM对象)
+
+//jQuery转换为DOM对象
+jQuery对象[对应的下标]
+//或者
+jQuery对象.get(对应的下标)
+</code></pre>
+<hr>
+<h2 id="jquery-">jQuery选择器</h2>
+<pre><code class="lang-js">$(&#39;css选择器&#39;)
+</code></pre>
+<hr>
+<h2 id="jquery-">jQuery设置样式</h2>
+<pre><code class="lang-js">.css(&#39;属性&#39;,&#39;值&#39;)
+</code></pre>
+<hr>
+<h2 id="-">隐式迭代</h2>
+<p>遍历内部DOM数组</p>
+<hr>
+<h2 id="-">筛选选择器</h2>
+<p><img src="笔记截图/jQuery筛选选择器.png" alt="jQuery筛选选择器"></p>
+<hr>
+<h2 id="siblings-">siblings()</h2>
+<pre><code class="lang-js">//排它
+.siblings()
+
+//查找祖先元素
+.parents(&#39;选择器&#39;)
+</code></pre>
+<p><img src="笔记截图/jQuery筛选方法.png" alt="jQuery筛选方法"></p>
+<hr>
+<h2 id="-">设置类样式</h2>
+<pre><code class="lang-js">// 1.添加类
+$(&quot;div&quot;).addClass(&quot;current&quot;);
+
+// 2.删除类
+$(&quot;div&quot;).removeClass(&quot;current&quot;);
+
+// 3.切换类
+$(&quot;div&quot;).toggleClass(&quot;current&quot;);
+
+$(&#39;div&#39;).hasClass(&#39;current&#39;);
+</code></pre>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

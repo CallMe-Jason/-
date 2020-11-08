@@ -16,8 +16,8 @@ const method = req.method
 if(method === 'GET'){
     res.setHeader('Content-Type','text/html; charset=utf-8')
        if(url === '/') {
-          fs.readFile(path.join(__dirname,'../练习/分离/index.html'),'utf8',function(err,dataStr){
-               if(err) return console.log('读取失败' + err.message);
+          fs.readFile(path.join(__dirname,'../../../../练习/node练习/clock/index.html'),'utf8',function(err,dataStr){
+            //    if(err) return console.log('读取失败' + err.message);
                console.log('读取成功');
                res.end(dataStr)
            })

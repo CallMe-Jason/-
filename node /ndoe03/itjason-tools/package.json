@@ -1,0 +1,15 @@
+{
+  "name": "itjason-tools",
+  "version": "1.0.0",
+  "description": "格式化时间",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jason",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
