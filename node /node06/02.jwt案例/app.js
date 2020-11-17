@@ -15,7 +15,7 @@ const secretKey = 'itheima No1 ^_^'//越复杂越好
 app.use(expressJWT({
   secret : secretKey,
   algorithms : ['HS256']
-}).unless({path:[/^\/api\//]}))//设置api接口不需要访问权限
+}).unless({path : [/^\/api\//]}))//设置api接口不需要访问权限
 
 
 // 允许跨域资源共享

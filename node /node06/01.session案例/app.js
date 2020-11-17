@@ -27,7 +27,7 @@ app.post('/api/login', (req, res) => {
   // TODO_02：请将登录成功后的用户信息，保存到 Session 中
   req.session.user = req.body//用户的信息
   req.session.islogin = true//用户的登录状态
-
+  
   res.send({ status: 0, msg: '登录成功' })
 })
 
