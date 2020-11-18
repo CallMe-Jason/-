@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gandfather" @click.stop='handel1'>div1
+        <div class="father" @click.self='handel2'>div2
+            <!-- self只有自己点击的时候才会触发 -->
+            <div class="son" @click='handel3'>div3</div>
+        </div>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el : '.gandfather',
+            data : {
+
+            },
+            methods : {
+                handel1 : function(){
+                    console.log('div1');
+                },
+                handel2 : function(){
+                    console.log('div2');
+                },
+                handel3 : function(){
+                    console.log('div3');
+                }
+            }
+        })
+    </script>
+</body>
+</html>

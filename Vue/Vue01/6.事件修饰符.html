@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <a v-on:click.stop = 'handle1'>123</a>
+        <a href='http://www.baidu.com' v-on:click.prevent='handle2'>百度</a>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el : '#app',
+            data : {
+
+            },
+            methods : {
+                handle1 : function(){
+
+                },
+                handle2 : function(){
+
+                }
+            }
+        })
+    </script>
+</body>
+</html>

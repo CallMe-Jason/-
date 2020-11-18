@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        用户名：<input type="text" v-on:keyup.delete='handleDelete' v-model='uname'></input>
+        密码：<input type="text" v-on:keyup.enter='handleEnter'></input>
+        <button>提交</button>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el : '#app',
+            data : {
+                uname : ''
+            },
+            methods : {
+                handleDelete(){
+                    // this.value = ''
+                    // console.log(this);
+                    this.uname = ''
+                },
+                handleEnter(){
+                    console.log('1');
+                }
+            }
+        })
+    </script>
+</body>
+</html>

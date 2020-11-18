@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="add">
+        <p>{{num}}</p>
+        <button @click='handle'>点击1</button>
+        <button @click='handle1(1,$event)'>点击2</button>
+   </div>
+    <script src="../vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el : '#add',
+            data : {
+                num : 0
+            },
+            methods : {
+                handle : function(e){
+                    console.log(e.target);
+                },
+                handle1 : function(a,event){
+                    console.log(event.target,a);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
