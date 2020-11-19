@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <p v-color='color'>121</p>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        Vue.directive('color', {
+            bind: function (el, binding) {
+                // console.log(binding);
+                el.style.backgroundColor = binding.value
+            }
+        })
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                color : 'orange'
+            },
+            methods: {
+
+            }
+        })
+    </script>
+</body>
+
+</html>
