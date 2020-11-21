@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <alert-box>Something bad happened.</alert-box>
+        <alert-box>有一个警告</alert-box>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        Vue.component('alert-box', {
+            template: `<div>
+	<strong>Error:</strong>
+	<slot></slot>
+</div>`
+        })
+        var vm = new Vue({
+            el: '#app',
+            data: {
+
+            },
+            methods: {
+
+            }
+        })
+    </script>
+</body>
+
+</html>

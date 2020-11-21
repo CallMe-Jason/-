@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <menu-item :p-Str="pStr" :p-Num='12' :p-Boo=true :p-Arr='pArr' :p-Obj='pObj'></menu-item>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        Vue.component('menu-item',{
+            props : ['pStr','pNum','pBoo','pArr','pObj'],
+            template : `<div>
+                <div>{{pStr}}</div>
+                <div>{{pNum}}</div>
+                <div>{{typeof pBoo}}</div>
+                <ul>
+                    <li :key='i' v-for='(e,i) in pArr'>{{e}}</li>
+                </ul>
+                <span>{{pObj.name}}</span>
+                <span>{{pObj.age}}</span>
+            </div>`
+        })
+        var vm = new Vue({
+            el : '#app',
+            data : {
+                pStr : 'hello',
+                pArr : ['apple','orange','banana'],
+                pObj : {
+                    name : 'lisi',
+                    age : 12
+                }
+            },
+            methods : {
+
+            }
+        })
+    </script>
+</body>
+</html>
