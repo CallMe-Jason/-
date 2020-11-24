@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./lib/vue_2.5.22.js"></script>
+    <script src="./lib/vue-router_3.0.2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <router-link to='/user/1'>User1</router-link>
+        <router-link to='/user/2'>User2</router-link>
+        <router-link :to="{ name: 'user', params: { id: 123 }}">User</router-link>
+        <!-- router.push({ name: 'user', params: { id: 123 }}) -->
+        <router-link to='/regUser'>regUser</router-link>
+        <!-- 路由占位符 -->
+        <router-view></router-view>
+    </div>
+   
+    <script>
+        const User = {
+            props : ['id','uname','age'],
+            template : `<div>
+                <h1>User----用户id：{{id}}用户名：{{uname}}用户年龄：{{age}}</h1>
+                <button @click="goRegUser">跳转到注册页面</button>
+                </div>`,
+            methods : {
+                goRegUser : function(){
+                    this.$router.push('/regUser')
+                }
+            }
+        }
+        const regUser = {
+            template : `<div>
+                <h1>regUser</h1>
+                <button @click="goBack">后退</button>
+                </div>`,
+            methods : {
+                goBack : function(){
+                    this.$router.go(-1)
+                }
+            }
+        }
+        const router1 = new VueRouter({
+        // 所有的路由规则
+        routes: [
+          { path: '/user/:id', 
+          name : 'user',
+          component: User, 
+          props : route => ({uname : 'zs',age : 20,id : route.params.id})
+        },
+          { path: '/regUser', component: regUser },
+          { path: '/',redirect:'/user' }
+        ]
+      })
+        const vm = new Vue({
+            el : '#app',
+            data : {
+            },
+            router : router1
+        })
+    </script>
+</body>
+</html>
