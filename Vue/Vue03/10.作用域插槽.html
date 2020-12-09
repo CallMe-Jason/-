@@ -14,6 +14,7 @@
     <div id="app">
         <fruit-list :list='list'>
             <template slot-scope="slotProps">
+                <!-- {{slotProps}} -->
                 <strong v-if='slotProps.info.id==2' class="current">{{slotProps.info.name}}</strong>
                 <span v-else>{{slotProps.info.name}}</span>
             </template>
