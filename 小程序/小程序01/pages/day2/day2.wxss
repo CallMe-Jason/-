@@ -1,0 +1,8 @@
+/* pages/day2/day2.wxss */
+@import '../../common//glob.wxss';
+input {
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}

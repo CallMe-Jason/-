@@ -1,0 +1,23 @@
+<!--pages/day2/day2.wxml-->
+<text>{{arr}}</text>
+<image src="{{imgSrc}}" mode="widthFix"></image>
+<view>
+  {{randomNum1 > 5 ? '大于5' : '小于5'}}
+</view>
+<button bindtap="btnhandler" type="primary"></button>
+<button bindtap="btnhandler1" type="primary">{{count}}</button>
+<button type="primary" bindtap="handler" data-name="溜达" data-age="{{count}}">传参</button>
+<input bindinput="inputHandler" value="{{msg}}"></input>
+<block wx:if="{{true}}">
+  <view>1</view>
+  <view>2</view>
+</block>
+<view wx:if="{{count === 1}}">男</view>
+<view wx:elif="{{count === 2}}">女</view>
+<view wx:else>保密</view>
+
+<view hidden="{{flag}}">条件为true时隐藏</view>
+<view wx:for="{{arr}}" wx:for-index='idx' wx:for-item='ele' wx:key='idx' class="username">
+  索引是: {{idx}},
+  item项是: {{ele }}
+</view>

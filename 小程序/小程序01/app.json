@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/day2/day2",
+    "pages/list/list",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#66ccff",
+    "navigationBarTitleText": "Jason",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+
+    "onReachBottomDistance": 200
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text": "index"
+      },
+      {
+        "pagePath":"pages/list/list",
+        "text": "list"
+      },
+      {
+        "pagePath":"pages/day2/day2",
+        "text": "day2"
+      },{
+        "pagePath":"pages/logs/logs",
+        "text": "logs"
+      }
+      ,{
+        "pagePath":"pages/test/test",
+        "text": "test"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

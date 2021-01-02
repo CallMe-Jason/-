@@ -1,0 +1,11 @@
+<swiper autoplay>
+  <swiper-item>
+    <image src="../tabs/IMG_6698(20190828-172059).JPG" mode="heightFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../tabs/IMG_6699(20190828-172100).JPG" mode="heightFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../tabs/IMG_6700(20190828-172100).JPG" mode="heightFix"></image>
+  </swiper-item>
+</swiper>

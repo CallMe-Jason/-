@@ -1,0 +1,21 @@
+/* .main {
+  触发了BFC机制
+  overflow: hidden;
+} */
+.one, .two {
+  margin-bottom: 10px;
+  width: 375rpx;
+  height: 300rpx;
+  float: left;
+}
+.one {
+  background-color: skyblue;
+}
+.two {
+  background-color: pink;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
