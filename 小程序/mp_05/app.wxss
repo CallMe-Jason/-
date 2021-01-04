@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page {
+  --button-danger-background-color: #c00000;
+  --button-danger-border-color: #d60000;
+
+  --button-primary-background-color: rgb(10, 120, 172);
+  --button-primary-border-color: rgb(28, 103, 241);
+}
