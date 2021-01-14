@@ -25,7 +25,7 @@ Component({
         count: this.data.count + 1
       })
       // 触发自定义事件，将数值同步给父组件
-      this.triggerEvent('sync', {value: this.properties.count})
+      this.triggerEvent('sync', {info: this.properties.count})
     }
   }
 })

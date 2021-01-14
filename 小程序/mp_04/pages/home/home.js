@@ -18,7 +18,7 @@ Page({
   syncCount (e) {
     console.log(e)
     this.setData({
-      count: e.detail.value
+      count: e.detail.info
     })
   },
   /**

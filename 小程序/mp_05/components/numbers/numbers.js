@@ -15,6 +15,12 @@ Component({
       updateNum2: 'updateNum2'
     }
   },
+  lifetimes: {
+
+  },
+  pageLifetimes: {
+
+  },
   /**
    * 组件的属性列表
    */
